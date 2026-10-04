@@ -1,1 +1,1085 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Daris Bau und Grün Werk | Gartenservice & Reinigung in Bremen</title>
+  <meta name="description" content="Daris Bau und Grün Werk – professionelle Gartenpflege, Heckenschnitt, Pflasterreinigung und Außenreinigung in Bremen und Umgebung.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #17221b;
+      background: #f7faf7;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* HEADER */
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #e5ebe6;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      height: 76px;
+      padding: 0 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: 900;
+      color: #126b35;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span {
+      color: #17221b;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: #14813e;
+    }
+
+    .nav-button {
+      background: #126b35;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 9px;
+      font-weight: 700;
+    }
+
+    .nav-button:hover {
+      background: #0d5429;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      padding: 150px 25px 80px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(5,25,14,.88), rgba(5,25,14,.52)),
+        url("images/garten-hero.jpg") center/cover;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.25);
+      padding: 8px 14px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .hero h1 {
+      max-width: 800px;
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 1.03;
+      margin-bottom: 25px;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: #54c878;
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 20px;
+      color: #e4eee7;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 9px;
+      font-weight: 800;
+      transition: .2s;
+    }
+
+    .btn-primary {
+      background: #31a85b;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #268b4a;
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      background: white;
+      color: #17321f;
+    }
+
+    .btn-light:hover {
+      background: #edf4ef;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 90px 25px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 50px;
+    }
+
+    .section-heading small {
+      color: #168040;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(32px, 4vw, 50px);
+      line-height: 1.1;
+      margin: 10px 0 15px;
+    }
+
+    .section-heading p {
+      color: #66736a;
+      font-size: 17px;
+    }
+
+    /* SERVICES */
+
+    .services {
+      background: white;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      padding: 30px;
+      border: 1px solid #e2e9e3;
+      border-radius: 16px;
+      background: #fff;
+      transition: .25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 35px rgba(0,0,0,.08);
+    }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #e5f5e9;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: #69746d;
+    }
+
+    /* WHY US */
+
+    .why {
+      background: #eef6f0;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .why-image {
+      min-height: 500px;
+      border-radius: 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),
+        url("images/garten-arbeit.jpg") center/cover;
+    }
+
+    .checks {
+      display: grid;
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .check {
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+      background: white;
+      padding: 17px;
+      border-radius: 12px;
+    }
+
+    .check-icon {
+      color: #159143;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    /* PROJECTS */
+
+    .projects {
+      background: white;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .project {
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      background: #eee;
+    }
+
+    .project img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .project-label {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      background: rgba(0,0,0,.72);
+      color: white;
+      padding: 8px 14px;
+      border-radius: 7px;
+      font-weight: 700;
+    }
+
+    /* PROCESS */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
+    }
+
+    .process {
+      text-align: center;
+      padding: 25px;
+    }
+
+    .number {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #126b35;
+      color: white;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 20px;
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .process h3 {
+      margin-bottom: 8px;
+    }
+
+    .process p {
+      color: #69746d;
+    }
+
+    /* CTA */
+
+    .cta {
+      background: #0d3820;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(35px, 5vw, 58px);
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #cbdacf;
+      max-width: 650px;
+      margin: 0 auto 30px;
+      font-size: 18px;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #f5f8f5;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 50px;
+    }
+
+    .contact-info h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      color: #68736c;
+      margin-bottom: 25px;
+    }
+
+    .contact-item {
+      margin: 15px 0;
+      font-weight: 700;
+    }
+
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 35px rgba(0,0,0,.06);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #d9e1da;
+      border-radius: 9px;
+      font: inherit;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #1a8545;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    form button {
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #081d10;
+      color: white;
+      padding: 45px 25px;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo {
+      font-size: 23px;
+      font-weight: 900;
+      color: #5ad17c;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      color: #c8d3ca;
+    }
+
+    .copyright {
+      max-width: 1200px;
+      margin: 30px auto 0;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255,255,255,.12);
+      color: #8c9b91;
+      font-size: 14px;
+    }
+
+    /* WHATSAPP */
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 999;
+      background: #20b85a;
+      color: white;
+      padding: 14px 19px;
+      border-radius: 50px;
+      font-weight: 800;
+      box-shadow: 0 8px 25px rgba(0,0,0,.2);
+    }
+
+    /* MOBILE */
+
+    @media(max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .why-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .why-image {
+        min-height: 350px;
+      }
+    }
+
+    @media(max-width: 600px) {
+
+      .hero {
+        padding-top: 130px;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 65px 18px;
+      }
+
+      .service-grid,
+      .project-grid,
+      .process-grid,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        padding: 0 18px;
+      }
+
+      .logo {
+        font-size: 17px;
+      }
+
+      .nav-button {
+        padding: 10px 13px;
+        font-size: 13px;
+      }
+
+      .whatsapp {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#" class="logo">
+      DARIS <span>BAU & GRÜN WERK</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#projekte">Referenzen</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#kontakt" class="nav-button">Angebot anfragen</a>
+    </div>
+
+    <a href="#kontakt" class="nav-button">Kontakt</a>
+  </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="badge">
+      🌿 Gartenservice & Außenreinigung in Bremen
+    </div>
+
+    <h1>
+      Wir bringen Ihre
+      <span>Außenflächen</span>
+      wieder zum Strahlen.
+    </h1>
+
+    <p>
+      Professionelle Gartenpflege, Heckenschnitt, Pflasterreinigung
+      und Außenreinigung – zuverlässig, sauber und gründlich.
+    </p>
+
+    <div class="buttons">
+      <a href="#kontakt" class="btn btn-primary">
+        Kostenloses Angebot
+      </a>
+
+      <a href="#leistungen" class="btn btn-light">
+        Leistungen ansehen
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="leistungen">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <small>Unsere Leistungen</small>
+
+      <h2>
+        Alles für einen gepflegten Außenbereich.
+      </h2>
+
+      <p>
+        Von der Gartenpflege bis zur gründlichen Reinigung –
+        wir kümmern uns um Ihre Außenflächen.
+      </p>
+    </div>
+
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="service-icon">🌱</div>
+        <h3>Gartenpflege</h3>
+        <p>
+          Rasenpflege, Unkrautentfernung, Laub und allgemeine
+          Pflegearbeiten für einen sauberen Garten.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">✂️</div>
+        <h3>Hecken & Sträucher</h3>
+        <p>
+          Professioneller Heckenschnitt, Strauchschnitt und
+          Rückschnitt für gepflegte Außenanlagen.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🧹</div>
+        <h3>Pflasterreinigung</h3>
+        <p>
+          Entfernung von Schmutz, Unkraut und Ablagerungen
+          von Pflastersteinen, Wegen und Terrassen.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">💦</div>
+        <h3>Außenreinigung</h3>
+        <p>
+          Gründliche Reinigung von Einfahrten, Terrassen,
+          Gehwegen, Mauern und weiteren Außenflächen.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🪟</div>
+        <h3>Glasreinigung</h3>
+        <p>
+          Reinigung von Glasdächern, Terrassenüberdachungen
+          und schwer erreichbaren Glasflächen.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🧽</div>
+        <h3>Reinigungsservice</h3>
+        <p>
+          Saubere und gründliche Reinigung nach individuellen
+          Anforderungen – privat oder gewerblich.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHY US -->
+
+<section class="why">
+
+  <div class="container why-grid">
+
+    <div class="why-image"></div>
+
+    <div>
+
+      <div class="section-heading">
+        <small>Warum wir?</small>
+
+        <h2>
+          Saubere Arbeit. Klare Ergebnisse.
+        </h2>
+
+        <p>
+          Wir legen Wert auf zuverlässige Arbeit,
+          saubere Ausführung und einen professionellen Auftritt.
+        </p>
+      </div>
+
+      <div class="checks">
+
+        <div class="check">
+          <div class="check-icon">✓</div>
+          <div>
+            <strong>Zuverlässig</strong>
+            <p>Absprachen und Termine werden ernst genommen.</p>
+          </div>
+        </div>
+
+        <div class="check">
+          <div class="check-icon">✓</div>
+          <div>
+            <strong>Gründliche Arbeit</strong>
+            <p>Wir achten auf Details und ein sauberes Ergebnis.</p>
+          </div>
+        </div>
+
+        <div class="check">
+          <div class="check-icon">✓</div>
+          <div>
+            <strong>Faire Preise</strong>
+            <p>Transparente Angebote passend zum Auftrag.</p>
+          </div>
+        </div>
+
+        <div class="check">
+          <div class="check-icon">✓</div>
+          <div>
+            <strong>Professionelles Equipment</strong>
+            <p>Wir arbeiten mit geeignetem Werkzeug und Geräten.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section class="projects" id="projekte">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <small>Unsere Arbeiten</small>
+
+      <h2>
+        Vorher. Nachher. Unterschied sehen.
+      </h2>
+
+      <p>
+        Hier kannst du später deine eigenen Projekte und
+        Vorher-Nachher-Bilder präsentieren.
+      </p>
+    </div>
+
+
+    <div class="project-grid">
+
+      <div class="project">
+        <img src="images/vorher.jpg" alt="Garten vorher">
+        <div class="project-label">Vorher</div>
+      </div>
+
+      <div class="project">
+        <img src="images/nachher.jpg" alt="Garten nachher">
+        <div class="project-label">Nachher</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section id="ablauf">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <small>So funktioniert es</small>
+
+      <h2>
+        In 4 einfachen Schritten zum gepflegten Außenbereich.
+      </h2>
+    </div>
+
+
+    <div class="process-grid">
+
+      <div class="process">
+        <div class="number">1</div>
+        <h3>Anfrage senden</h3>
+        <p>Beschreiben Sie kurz Ihren Auftrag.</p>
+      </div>
+
+      <div class="process">
+        <div class="number">2</div>
+        <h3>Angebot erhalten</h3>
+        <p>Wir besprechen den Auftrag und den Preis.</p>
+      </div>
+
+      <div class="process">
+        <div class="number">3</div>
+        <h3>Termin vereinbaren</h3>
+        <p>Wir finden gemeinsam einen passenden Termin.</p>
+      </div>
+
+      <div class="process">
+        <div class="number">4</div>
+        <h3>Arbeit erledigt</h3>
+        <p>Wir führen den Auftrag sauber und gründlich aus.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>
+      Ihr Garten könnte besser aussehen.
+    </h2>
+
+    <p>
+      Lassen Sie uns gemeinsam dafür sorgen,
+      dass Ihre Außenflächen wieder gepflegt aussehen.
+    </p>
+
+    <a href="#kontakt" class="btn btn-primary">
+      Jetzt Anfrage senden
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="kontakt">
+
+  <div class="container contact-grid">
+
+    <div class="contact-info">
+
+      <div class="section-heading">
+        <small>Kontakt</small>
+
+        <h2>
+          Lassen Sie uns über Ihr Projekt sprechen.
+        </h2>
+
+        <p>
+          Senden Sie uns Ihre Anfrage. Je mehr Informationen
+          Sie uns geben, desto besser können wir Ihren Auftrag
+          einschätzen.
+        </p>
+      </div>
+
+      <h3>Daris Bau und Grün Werk</h3>
+
+      <div class="contact-item">
+        📍 Bremen & Umgebung
+      </div>
+
+      <div class="contact-item">
+        📞 DEINE TELEFONNUMMER
+      </div>
+
+      <div class="contact-item">
+        ✉️ DEINE E-MAIL
+      </div>
+
+    </div>
+
+
+    <form action="DEIN_FORMULAR_LINK" method="POST">
+
+      <div class="form-row">
+
+        <div class="field">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Ihr Name"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="phone">Telefon</label>
+          <input
+            id="phone"
+            type="tel"
+            name="phone"
+            placeholder="Ihre Telefonnummer"
+            required
+          >
+        </div>
+
+      </div>
+
+
+      <div class="field">
+        <label for="email">E-Mail</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Ihre E-Mail-Adresse"
+          required
+        >
+      </div>
+
+
+      <div class="field">
+
+        <label for="service">
+          Gewünschte Leistung
+        </label>
+
+        <select id="service" name="service">
+
+          <option>Bitte auswählen</option>
+          <option>Gartenpflege</option>
+          <option>Heckenschnitt</option>
+          <option>Unkrautentfernung</option>
+          <option>Pflasterreinigung</option>
+          <option>Außenreinigung</option>
+          <option>Glasreinigung</option>
+          <option>Sonstiges</option>
+
+        </select>
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="message">
+          Beschreibung
+        </label>
+
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Beschreiben Sie kurz, was gemacht werden soll..."
+        ></textarea>
+
+      </div>
+
+
+      <button
+        type="submit"
+        class="btn btn-primary"
+      >
+        Anfrage senden
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="footer-content">
+
+    <div>
+      <div class="footer-logo">
+        DARIS BAU & GRÜN WERK
+      </div>
+
+      <p>
+        Gartenservice & Reinigungsservice
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Daris Bau und Grün Werk. Alle Rechte vorbehalten.
+  </div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/491234567890"
+  target="_blank"
+>
+  WhatsApp
+</a>
+
+</body>
+</html>
