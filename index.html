@@ -1,1077 +1,2822 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ===== SEO: Titel & Beschreibung (das sieht man bei Google) ===== -->
-  <title>Gartenservice &amp; Außenreinigung Bremen | Daris Bau und Grün Werk</title>
-  <meta name="description" content="Daris Bau und Grün Werk: Gartenpflege, Heckenschnitt, Pflaster- und Außenreinigung in Bremen und Umgebung. Jetzt kostenloses Angebot anfragen.">
-  <meta name="robots" content="index, follow">
-  <!-- TODO: Ersetze DEINE-DOMAIN durch deine echte Adresse, sobald du sie hast -->
-  <link rel="canonical" href="https://DEINE-DOMAIN/">
+<title>Daris Bau und Grün Werk | Gartenservice & Reinigung</title>
 
-  <!-- Vorschau beim Teilen (WhatsApp, Facebook usw.) -->
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="de_DE">
-  <meta property="og:title" content="Gartenservice &amp; Außenreinigung in Bremen | Daris Bau und Grün Werk">
-  <meta property="og:description" content="Gartenpflege, Heckenschnitt, Pflasterreinigung und Außenreinigung in Bremen und Umgebung. Kostenloses Angebot anfragen.">
-  <meta name="theme-color" content="#0e3b2c">
+<meta name="description"
+content="Daris Bau und Grün Werk – Gartenpflege, Heckenschnitt, Unkrautentfernung, Pflasterreinigung und Außenreinigung in Bremen und Umgebung.">
 
-  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+CiAgPHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiByeD0iMTIiIGZpbGw9IiMwRTNCMkMiLz4KICA8cGF0aCBkPSJNMTAgMzZDMTAgMjIgMTcgMTEgMzggMTFjMCAxNi05IDI1LTI4IDI1eiIgZmlsbD0iIzVCQkY3RiIvPgogIDxwYXRoIGQ9Ik0xMiAzNmM2LTkgMTMtMTQgMjEtMTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzBFM0IyQyIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K" type="image/svg+xml">
-  <style>
-/* ==========================================================================
-   Daris Bau und Grün Werk – Stylesheet
-   Aufbau:
-   1. Farben & Grundlagen   2. Buttons   3. Header & Navigation   4. Hero
-   5. Leistungen            6. Warum wir 7. Über uns   8. Referenzen
-   9. Ablauf               10. CTA-Bereiche 11. Kontakt 12. Footer
-   13. Mobile Schnellleiste 14. Rechtstexte 15. Barrierefreiheit
-   ========================================================================== */
+<style>
+/* =========================================================
+   DARIS BAU UND GRÜN WERK
+   Moderne Gartenservice Website
+   ========================================================= */
 
-/* ===== 1. FARBEN & GRUNDLAGEN =====
-   Hier kannst du die Farben der ganzen Seite ändern. */
 :root {
-  --forest: #0e3b2c;       /* Dunkelgrün (Überschriften, Header, Footer) */
-  --green: #23763f;        /* Grün (Buttons) */
-  --green-dark: #1a5c31;   /* Grün dunkler (Button beim Darüberfahren) */
-  --leaf: #5bbf7f;         /* Helles Grün (Akzente auf dunklem Grund) */
-  --mint: #e6f2e9;         /* Sehr helles Grün (Flächen) */
-  --sky: #eaf1f7;          /* Dezentes Hellblau (Flächen) */
-  --blue: #4f7396;         /* Blau (Akzent) */
-  --ink: #14231b;          /* Textfarbe */
-  --muted: #4d5f55;        /* Grauer Text */
-  --line: #d6e0d9;         /* Linien */
-
-  --font-head: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, Georgia, serif;
-  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --green-dark: #103d25;
+    --green: #198a45;
+    --green-light: #55c978;
+    --lime: #b8e85b;
+    --blue: #38a9d6;
+    --blue-light: #dff5ff;
+    --cream: #f7f8ef;
+    --white: #ffffff;
+    --text: #15221a;
+    --muted: #66736b;
+    --border: #dfe9df;
+    --shadow: 0 20px 60px rgba(16,61,37,.12);
+    --radius: 22px;
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 84px; /* damit Überschriften nicht unter dem Header landen */
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: var(--font-body);
-  font-size: 1.0625rem;
-  line-height: 1.65;
-  color: var(--ink);
-  background: #fff;
-  -webkit-font-smoothing: antialiased;
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    overflow-x: hidden;
 }
 
-img, svg { max-width: 100%; display: block; }
-a { color: var(--green); }
-
-h1, h2, h3 {
-  font-family: var(--font-head);
-  color: var(--forest);
-  line-height: 1.15;
-  margin: 0 0 .5em;
-  font-weight: 700;
-  letter-spacing: -.01em;
-}
-h2 { font-size: clamp(1.9rem, 4.2vw, 2.8rem); }
-h3 { font-size: 1.3rem; }
-p { margin: 0 0 1em; }
-
-.container { width: min(1140px, 100% - 2.5rem); margin-inline: auto; }
-.section { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
-.section-intro { max-width: 60ch; color: var(--muted); font-size: 1.15rem; margin-bottom: 2.5rem; }
-
-.icon { width: 1.35em; height: 1.35em; flex: none; fill: none; stroke: currentColor;
-        stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-
-/* Häkchen-Listen */
-.ticks { list-style: none; margin: 0; padding: 0; }
-.ticks li { position: relative; padding-left: 1.7rem; margin-bottom: .45rem; }
-.ticks li::before {
-  content: ""; position: absolute; left: 0; top: .42em; width: 1.05rem; height: 1.05rem;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2323763F' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center / contain no-repeat;
+body.no-scroll {
+    overflow: hidden;
 }
 
-/* ===== 2. BUTTONS ===== */
-.btn {
-  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
-  padding: .9rem 1.5rem; border-radius: 999px; border: 2px solid transparent;
-  font: 700 1rem/1.2 var(--font-body); text-decoration: none; cursor: pointer;
-  transition: background-color .2s, color .2s, transform .2s, box-shadow .2s;
+img {
+    display: block;
+    width: 100%;
 }
-.btn-primary { background: var(--green); color: #fff; }
-.btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); box-shadow: 0 8px 20px rgba(14, 59, 44, .25); }
-.btn-ghost { border-color: rgba(255, 255, 255, .75); color: #fff; }
-.btn-ghost:hover { background: rgba(255, 255, 255, .14); }
-.btn-light { background: #fff; color: var(--forest); }
-.btn-light:hover { background: var(--mint); transform: translateY(-1px); }
-.btn-outline { border-color: var(--forest); color: var(--forest); }
-.btn-outline:hover { background: var(--forest); color: #fff; }
-.btn-sm { padding: .6rem 1.15rem; font-size: .95rem; }
 
-/* ===== 3. HEADER & NAVIGATION ===== */
-.site-header {
-  position: sticky; top: 0; z-index: 50;
-  background: rgba(255, 255, 255, .95); backdrop-filter: blur(8px);
-  border-bottom: 1px solid transparent;
-  transition: box-shadow .2s, border-color .2s;
+a {
+    color: inherit;
+    text-decoration: none;
 }
-.site-header.scrolled { border-color: var(--line); box-shadow: 0 4px 18px rgba(14, 59, 44, .08); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 72px; }
 
-.brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; color: var(--forest); }
-.brand img { width: 44px; height: 44px; }
-.brand-name { display: block; font: 700 1.3rem/1 var(--font-head); }
-.brand-sub { display: block; font-size: .8rem; line-height: 1.3; color: var(--muted); }
-
-.nav-toggle {
-  display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
-  width: 44px; height: 44px; padding: 0 11px; background: none; border: 0; cursor: pointer;
+button,
+input,
+textarea,
+select {
+    font: inherit;
 }
-.nav-toggle span { display: block; height: 2px; background: var(--forest); border-radius: 2px; transition: transform .2s, opacity .2s; }
-.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
-.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Mobile: Menü klappt unter dem Header auf */
+button {
+    cursor: pointer;
+}
+
+::selection {
+    background: var(--lime);
+    color: var(--green-dark);
+}
+
+/* ACCESSIBILITY */
+
+:focus-visible {
+    outline: 3px solid var(--blue);
+    outline-offset: 4px;
+}
+
+.skip-link {
+    position: fixed;
+    left: 15px;
+    top: -100px;
+    z-index: 9999;
+    background: white;
+    color: var(--green-dark);
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.skip-link:focus {
+    top: 15px;
+}
+
+/* PROGRESS BAR */
+
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--green-light), var(--blue), var(--lime));
+    z-index: 99999;
+}
+
+/* FLOATING LEAVES */
+
+.leaf {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1;
+    opacity: .5;
+    animation: floatLeaf linear infinite;
+}
+
+.leaf.one {
+    left: 4%;
+    top: 25%;
+    font-size: 22px;
+    animation-duration: 12s;
+}
+
+.leaf.two {
+    right: 7%;
+    top: 55%;
+    font-size: 18px;
+    animation-duration: 16s;
+}
+
+.leaf.three {
+    left: 80%;
+    top: 20%;
+    font-size: 15px;
+    animation-duration: 14s;
+}
+
+@keyframes floatLeaf {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(50px) rotate(120deg);
+    }
+    100% {
+        transform: translateY(0) rotate(240deg);
+    }
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    z-index: 5000;
+    padding: 14px 20px;
+}
+
 .nav {
-  display: none; position: absolute; top: 100%; left: 0; right: 0;
-  flex-direction: column; background: #fff; padding: .5rem 1.25rem 1.5rem;
-  border-bottom: 1px solid var(--line); box-shadow: 0 12px 24px rgba(14, 59, 44, .1);
-}
-.nav.open { display: flex; }
-.nav a { padding: .8rem 0; border-bottom: 1px solid var(--line); color: var(--ink); text-decoration: none; font-weight: 600; }
-.nav a:hover { color: var(--green); }
-.header-cta { display: none; }
+    max-width: 1200px;
+    margin: auto;
+    height: 70px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-@media (min-width: 960px) {
-  .nav-toggle { display: none; }
-  .nav { display: flex; position: static; flex-direction: row; gap: 1.7rem; padding: 0; border: 0; box-shadow: none; background: none; }
-  .nav a { padding: .4rem 0; border: 0; font-size: .98rem; }
-  .header-cta { display: inline-flex; }
-}
+    background: rgba(255,255,255,.90);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
 
-/* ===== 4. HERO ===== */
-.hero { position: relative; display: flex; align-items: center; min-height: min(86vh, 760px); background: var(--forest); overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.hero::after { /* dunkler Verlauf links, damit der Text gut lesbar ist */
-  content: ""; position: absolute; inset: 0;
-  background: linear-gradient(100deg, rgba(10, 45, 33, .93) 0%, rgba(10, 45, 33, .78) 45%, rgba(10, 45, 33, .2) 100%);
-}
-.hero-content { position: relative; z-index: 2; padding: 4rem 0; color: #fff; }
-.hero h1 { color: #fff; font-size: clamp(2.3rem, 6vw, 4.1rem); max-width: 17ch; margin-bottom: .45em; }
-.hero-lead { font-size: clamp(1.1rem, 2vw, 1.3rem); max-width: 52ch; color: #e3efe7; margin-bottom: 2rem; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 2.2rem; }
-.hero-facts { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem 1.8rem; font-size: .98rem; color: #d3e6da; }
-.hero-facts li { display: flex; align-items: center; gap: .45rem; }
-.hero-facts .icon { color: var(--leaf); width: 1.1em; height: 1.1em; stroke-width: 2.6; }
+    border: 1px solid rgba(255,255,255,.8);
+    border-radius: 18px;
 
-/* Einmalige Einblend-Animation beim Laden (die einzige Animation im Hero) */
-@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
-.hero-content > * { animation: rise .7s cubic-bezier(.2, .7, .2, 1) both; }
-.hero-content > :nth-child(2) { animation-delay: .1s; }
-.hero-content > :nth-child(3) { animation-delay: .2s; }
-.hero-content > :nth-child(4) { animation-delay: .3s; }
-
-/* ===== 5. LEISTUNGEN ===== */
-.services-grid { display: grid; gap: 1.4rem; grid-template-columns: 1fr; }
-@media (min-width: 700px)  { .services-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1020px) { .services-grid { grid-template-columns: repeat(3, 1fr); } }
-
-.card {
-  background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 1.8rem;
-  transition: border-color .2s, transform .2s, box-shadow .2s;
-}
-.card:hover { border-color: var(--green); transform: translateY(-3px); box-shadow: 0 14px 30px rgba(14, 59, 44, .1); }
-.card-icon {
-  display: grid; place-items: center; width: 52px; height: 52px; margin-bottom: 1.1rem;
-  background: var(--mint); color: var(--green); border-radius: 14px;
-}
-.card-icon .icon { width: 26px; height: 26px; }
-.card p { color: var(--muted); font-size: 1rem; }
-.card .ticks { font-size: .98rem; }
-
-.cta-strip { background: var(--mint); padding: 2.2rem 0; }
-.cta-strip-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem; }
-.cta-strip p { margin: 0; font: 700 1.35rem/1.3 var(--font-head); color: var(--forest); }
-
-/* ===== 6. WARUM WIR ===== */
-.why { background: var(--forest); color: #fff; }
-.why h2 { color: #fff; }
-.why .section-intro { color: #bcd3c4; }
-.why-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 2rem 2.5rem; grid-template-columns: 1fr; }
-@media (min-width: 640px)  { .why-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1020px) { .why-grid { grid-template-columns: repeat(3, 1fr); } }
-.why-grid li { display: grid; grid-template-columns: 40px 1fr; gap: 1rem; align-items: start; }
-.why-check {
-  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
-  background: rgba(91, 191, 127, .18); color: var(--leaf);
-}
-.why-check .icon { stroke-width: 2.8; width: 20px; height: 20px; }
-.why-grid strong { display: block; font: 700 1.2rem/1.3 var(--font-head); margin-bottom: .2rem; }
-.why-grid span { color: #bcd3c4; font-size: 1rem; }
-
-/* ===== 7. ÜBER UNS ===== */
-.about-grid { display: grid; gap: 3rem; grid-template-columns: 1fr; align-items: center; }
-@media (min-width: 900px) { .about-grid { grid-template-columns: 1.15fr 1fr; gap: 4.5rem; } }
-.about-panel { background: var(--sky); border-radius: 20px; padding: 2rem; }
-.about-panel dl { margin: 0; }
-.about-panel dt { font-weight: 700; color: var(--forest); margin-top: 1.1rem; }
-.about-panel dt:first-child { margin-top: 0; }
-.about-panel dd { margin: .15rem 0 0; color: var(--muted); }
-
-/* ===== 8. REFERENZEN (Vorher-Nachher-Regler) ===== */
-.references { background: var(--sky); }
-.ba-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; margin-bottom: 2.5rem; }
-@media (min-width: 800px) { .ba-grid { grid-template-columns: repeat(2, 1fr); } }
-.ba-item { margin: 0; }
-.ba-item figcaption { margin-top: .8rem; color: var(--muted); font-size: .98rem; }
-
-.ba { position: relative; aspect-ratio: 3 / 2; overflow: hidden; border-radius: 18px; background: var(--mint); --pos: 50%; }
-.ba img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.ba-before { clip-path: inset(0 calc(100% - var(--pos)) 0 0); } /* zeigt "Vorher" links vom Regler */
-.ba-range {
-  position: absolute; inset: 0; z-index: 3; width: 100%; height: 100%; margin: 0;
-  opacity: 0; cursor: ew-resize; touch-action: pan-y; -webkit-appearance: none; appearance: none;
-}
-.ba-range::-webkit-slider-thumb { -webkit-appearance: none; width: 2px; height: 100vh; }
-.ba-range::-moz-range-thumb { width: 2px; height: 100%; border: 0; }
-.ba-handle {
-  position: absolute; top: 0; bottom: 0; left: var(--pos); z-index: 2; width: 3px;
-  background: #fff; transform: translateX(-50%); box-shadow: 0 0 0 1px rgba(0, 0, 0, .12); pointer-events: none;
-}
-.ba-handle::after {
-  content: "\2194"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%;
-  background: #fff; color: var(--forest); font-size: 1.3rem; box-shadow: 0 4px 14px rgba(0, 0, 0, .25);
-}
-.ba-range:focus-visible ~ .ba-handle::after { outline: 3px solid var(--blue); outline-offset: 2px; }
-.ba-tag {
-  position: absolute; top: .8rem; z-index: 1; padding: .2rem .8rem; border-radius: 999px;
-  background: rgba(14, 59, 44, .85); color: #fff; font-size: .85rem; font-weight: 600; pointer-events: none;
-}
-.ba-tag-before { left: .8rem; }
-.ba-tag-after { right: .8rem; }
-.references .more { text-align: center; }
-
-/* ===== 9. ABLAUF ===== */
-.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 2rem; grid-template-columns: 1fr; counter-reset: step; }
-@media (min-width: 700px)  { .steps { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1020px) { .steps { grid-template-columns: repeat(4, 1fr); gap: 1.6rem; } }
-.steps li { counter-increment: step; position: relative; padding-top: 4rem; }
-.steps li::before {
-  content: counter(step); position: absolute; top: 0; left: 0;
-  display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%;
-  background: var(--green); color: #fff; font: 700 1.3rem/1 var(--font-head);
-}
-@media (min-width: 1020px) {
-  .steps li:not(:last-child)::after { /* Verbindungslinie zwischen den Schritten */
-    content: ""; position: absolute; top: 1.5rem; left: 3.6rem; right: -.6rem; height: 2px; background: var(--line);
-  }
-}
-.steps p { color: var(--muted); font-size: 1rem; }
-
-/* ===== 10. CTA-BEREICH ===== */
-.cta-banner { background: linear-gradient(120deg, var(--forest), #176338); color: #fff; text-align: center; }
-.cta-banner h2 { color: #fff; margin-bottom: .2em; }
-.cta-banner p { font-size: 1.25rem; color: #d3e6da; margin-bottom: 1.8rem; }
-
-/* ===== 11. KONTAKT ===== */
-.contact-grid { display: grid; gap: 3rem; grid-template-columns: 1fr; }
-@media (min-width: 960px) { .contact-grid { grid-template-columns: .85fr 1.15fr; gap: 4rem; } }
-
-.contact-list { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 1rem; }
-.contact-list a, .contact-list .contact-row {
-  display: flex; align-items: center; gap: 1rem; padding: 1rem 1.2rem; border: 1px solid var(--line);
-  border-radius: 14px; text-decoration: none; color: var(--ink); transition: border-color .2s, background-color .2s;
-}
-.contact-list a:hover { border-color: var(--green); background: var(--mint); }
-.contact-list .icon { width: 24px; height: 24px; color: var(--green); }
-.contact-list small { display: block; color: var(--muted); font-size: .85rem; line-height: 1.2; }
-.contact-list strong { font-size: 1.05rem; word-break: break-word; }
-
-.form-card { background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: clamp(1.4rem, 4vw, 2.4rem); box-shadow: 0 18px 40px rgba(14, 59, 44, .08); }
-.form-card h3 { font-size: 1.5rem; }
-.form-grid { display: grid; gap: 1rem 1.2rem; grid-template-columns: 1fr; }
-@media (min-width: 620px) { .form-grid { grid-template-columns: 1fr 1fr; } .form-grid .full { grid-column: 1 / -1; } }
-.field label { display: block; font-weight: 600; font-size: .95rem; margin-bottom: .3rem; color: var(--forest); }
-.field input, .field select, .field textarea {
-  width: 100%; padding: .8rem .9rem; font: inherit; color: var(--ink);
-  background: #f6f9f7; border: 1.5px solid var(--line); border-radius: 12px;
-}
-.field input:focus, .field select:focus, .field textarea:focus { outline: 3px solid rgba(35, 118, 63, .3); border-color: var(--green); background: #fff; }
-.field textarea { min-height: 130px; resize: vertical; }
-.field .hint { font-size: .85rem; color: var(--muted); margin: .3rem 0 0; }
-.file-list { margin: .5rem 0 0; padding: 0; list-style: none; font-size: .9rem; color: var(--muted); }
-.consent { display: flex; gap: .7rem; align-items: flex-start; font-size: .95rem; color: var(--muted); }
-.consent input { width: 20px; height: 20px; margin-top: .2rem; flex: none; accent-color: var(--green); }
-.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; } /* Spam-Falle, bitte nicht löschen */
-.form-msg { margin: 1rem 0 0; font-weight: 600; }
-.form-msg.error { color: #b3261e; }
-.form-msg.ok { color: var(--green); }
-.form-card .btn { margin-top: 1.2rem; width: 100%; }
-.form-card .btn[disabled] { opacity: .6; cursor: wait; }
-.form-success { text-align: center; padding: 2rem 0; }
-.form-success .icon { width: 56px; height: 56px; color: var(--green); margin: 0 auto 1rem; stroke-width: 2.2; }
-
-/* ===== 12. FOOTER ===== */
-.site-footer { background: var(--forest); color: #bcd3c4; padding: 3.5rem 0 2rem; font-size: .98rem; }
-.footer-grid { display: grid; gap: 2rem; grid-template-columns: 1fr; margin-bottom: 2.5rem; }
-@media (min-width: 760px) { .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; } }
-.site-footer h2 { font: 700 1.2rem/1.2 var(--font-head); color: #fff; margin-bottom: .6rem; }
-.site-footer h3 { font: 700 1rem/1.2 var(--font-body); color: #fff; margin-bottom: .6rem; }
-.site-footer p { margin: 0 0 .3rem; }
-.site-footer ul { list-style: none; margin: 0; padding: 0; }
-.site-footer li { margin-bottom: .4rem; }
-.site-footer a { color: #d9eadf; }
-.site-footer a:hover { color: #fff; }
-.footer-bottom { border-top: 1px solid rgba(255, 255, 255, .15); padding-top: 1.4rem; font-size: .88rem; }
-
-/* ===== 13. MOBILE SCHNELLLEISTE (nur auf Smartphones) ===== */
-.mobile-bar {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; display: grid; grid-template-columns: 1fr 1fr 1.2fr;
-  gap: .5rem; padding: .6rem .8rem calc(.6rem + env(safe-area-inset-bottom, 0px));
-  background: rgba(255, 255, 255, .97); border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(14, 59, 44, .1);
-}
-.mobile-bar a {
-  display: flex; align-items: center; justify-content: center; gap: .4rem; padding: .7rem .4rem;
-  border-radius: 999px; border: 2px solid var(--forest); color: var(--forest); font-weight: 700; font-size: .95rem; text-decoration: none;
-}
-.mobile-bar a.primary { background: var(--green); border-color: var(--green); color: #fff; }
-.mobile-bar .icon { width: 1.1em; height: 1.1em; }
-body { padding-bottom: 72px; }
-@media (min-width: 760px) { .mobile-bar { display: none; } body { padding-bottom: 0; } }
-
-/* ===== 14. RECHTSTEXTE (Impressum, Datenschutz) ===== */
-.legal { max-width: 780px; padding: 3rem 0 5rem; }
-.legal h1 { font-size: clamp(2rem, 5vw, 2.8rem); }
-.legal h2 { font-size: 1.4rem; margin-top: 2.2rem; }
-.legal .notice { background: #fff6d6; border: 1px solid #e7d37a; border-radius: 12px; padding: 1rem 1.2rem; margin-bottom: 2rem; font-size: .98rem; }
-.legal mark { background: #fff1a8; padding: 0 .2em; border-radius: 3px; }
-
-/* ===== 15. BARRIEREFREIHEIT ===== */
-:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
-.skip-link { position: absolute; left: -9999px; top: 0; z-index: 100; background: #fff; padding: .8rem 1.2rem; color: var(--forest); font-weight: 700; }
-.skip-link:focus { left: .5rem; top: .5rem; }
-
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { animation: none !important; transition: none !important; }
+    box-shadow: 0 12px 40px rgba(16,61,37,.10);
 }
 
-/* ===== Rechtstexte: nur sichtbar, wenn man auf Impressum/Datenschutz klickt ===== */
-.legal-section { display: none; }
-.legal-section:target { display: block; }
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 950;
+    color: var(--green-dark);
+}
+
+.logo-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, var(--green), var(--green-light));
+    color: white;
+    font-size: 21px;
+    box-shadow: 0 8px 20px rgba(25,138,69,.25);
+    transition: .3s;
+}
+
+.logo:hover .logo-mark {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+.logo-text {
+    line-height: 1;
+}
+
+.logo-text strong {
+    display: block;
+    font-size: 15px;
+}
+
+.logo-text small {
+    display: block;
+    margin-top: 4px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: var(--green);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    font-size: 14px;
+    font-weight: 750;
+}
+
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a:not(.nav-cta)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: var(--green);
+    transition: .25s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-cta {
+    color: white;
+    background: var(--green);
+    padding: 12px 18px;
+    border-radius: 11px;
+    box-shadow: 0 8px 20px rgba(25,138,69,.20);
+    transition: .25s;
+}
+
+.nav-cta:hover {
+    transform: translateY(-2px);
+    background: var(--green-dark);
+}
+
+.menu-button {
+    display: none;
+    border: 0;
+    background: #edf7ef;
+    color: var(--green-dark);
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 900px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at 80% 20%, rgba(85,201,120,.25), transparent 30%),
+        radial-gradient(circle at 15% 70%, rgba(56,169,214,.15), transparent 25%),
+        linear-gradient(135deg, #0c3a22, #126536 60%, #174f32);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: .13;
+
+    background-image:
+        radial-gradient(circle, white 1px, transparent 1px);
+
+    background-size: 35px 35px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: min(1200px, calc(100% - 40px));
+    margin: auto;
+    padding-top: 100px;
+    color: white;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 14px;
+    border-radius: 50px;
+
+    background: rgba(255,255,255,.10);
+    border: 1px solid rgba(255,255,255,.20);
+
+    backdrop-filter: blur(10px);
+
+    font-size: 13px;
+    font-weight: 800;
+
+    animation: fadeUp .8s ease both;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #78e38e;
+    box-shadow: 0 0 0 6px rgba(120,227,142,.13);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    50% {
+        box-shadow: 0 0 0 12px rgba(120,227,142,0);
+    }
+}
+
+.hero h1 {
+    max-width: 880px;
+    margin-top: 24px;
+
+    font-size: clamp(48px, 7vw, 88px);
+    line-height: .98;
+    letter-spacing: -4px;
+
+    animation: fadeUp .8s .1s ease both;
+}
+
+.hero h1 .green {
+    color: var(--lime);
+}
+
+.hero h1 .blue {
+    color: #7ddaff;
+}
+
+.hero-description {
+    max-width: 650px;
+    margin-top: 27px;
+
+    font-size: 19px;
+    line-height: 1.7;
+    color: #e0f0e5;
+
+    animation: fadeUp .8s .2s ease both;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+    margin-top: 34px;
+
+    animation: fadeUp .8s .3s ease both;
+}
+
+.btn {
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 0 21px;
+    border-radius: 13px;
+
+    font-weight: 850;
+    transition:
+        transform .25s,
+        box-shadow .25s,
+        background .25s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+.btn-primary {
+    background: var(--lime);
+    color: #173119;
+    box-shadow: 0 12px 30px rgba(184,232,91,.18);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 18px 35px rgba(184,232,91,.28);
+}
+
+.btn-white {
+    background: white;
+    color: var(--green-dark);
+}
+
+.btn-outline {
+    border: 1px solid rgba(255,255,255,.30);
+    color: white;
+    background: rgba(255,255,255,.08);
+}
+
+/* HERO DECORATION */
+
+.hero-tools {
+    position: absolute;
+    right: 6%;
+    bottom: 16%;
+    z-index: 2;
+
+    width: 330px;
+    height: 330px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle at center, #66cf79 0 18%, transparent 19%),
+        conic-gradient(
+            from 0deg,
+            #1b7c3f,
+            #4bc16b,
+            #7edb83,
+            #1b7c3f
+        );
+
+    opacity: .20;
+    filter: blur(.2px);
+
+    animation: slowSpin 20s linear infinite;
+}
+
+.hero-tools::before {
+    content: "🌿";
+    position: absolute;
+    font-size: 100px;
+    left: 90px;
+    top: 95px;
+    opacity: .8;
+}
+
+@keyframes slowSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hero-bottom {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 90px;
+
+    background: var(--cream);
+
+    clip-path: ellipse(65% 70% at 50% 100%);
+}
+
+/* TRUST STRIP */
+
+.trust-strip {
+    position: relative;
+    z-index: 10;
+    margin-top: -35px;
+}
+
+.trust-grid {
+    width: min(1100px, calc(100% - 40px));
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.trust-item {
+    padding: 25px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+}
+
+.trust-item:last-child {
+    border-right: 0;
+}
+
+.trust-icon {
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.trust-item strong {
+    display: block;
+    font-size: 15px;
+}
+
+.trust-item span {
+    display: block;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+/* GENERAL */
+
+section {
+    padding: 110px 20px;
+}
+
+.container {
+    width: min(1200px, 100%);
+    margin: auto;
+}
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 950;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.section-label::before {
+    content: "";
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--lime);
+}
+
+.section-title {
+    margin-top: 12px;
+    max-width: 780px;
+
+    font-size: clamp(35px, 5vw, 60px);
+    line-height: 1.04;
+    letter-spacing: -2.5px;
+}
+
+.section-description {
+    max-width: 650px;
+    margin-top: 17px;
+
+    color: var(--muted);
+    font-size: 17px;
+}
+
+/* SERVICES */
+
+.services {
+    background: var(--cream);
+}
+
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: end;
+    margin-bottom: 45px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+}
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 260px;
+    padding: 28px;
+
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    transition:
+        transform .35s cubic-bezier(.2,.8,.2,1),
+        box-shadow .35s,
+        border-color .35s;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    right: -50px;
+    top: -50px;
+    border-radius: 50%;
+    background: var(--blue-light);
+    transition: .4s;
+}
+
+.service-card:hover {
+    transform: translateY(-9px);
+    box-shadow: var(--shadow);
+    border-color: #b8dabb;
+}
+
+.service-card:hover::before {
+    transform: scale(1.5);
+}
+
+.service-number {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    color: #b7c3ba;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.service-icon {
+    position: relative;
+    z-index: 1;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 17px;
+
+    background: #e8f7e9;
+    font-size: 27px;
+
+    transition: transform .35s;
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(-8deg) scale(1.1);
+}
+
+.service-card h3 {
+    position: relative;
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+.service-card p {
+    position: relative;
+    margin-top: 9px;
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+.service-link {
+    position: relative;
+    display: inline-flex;
+    margin-top: 20px;
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 900;
+}
+
+/* ABOUT / WHY */
+
+.about {
+    background:
+        linear-gradient(135deg, #eaf7ec, #f5f9ee);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-visual {
+    position: relative;
+    min-height: 530px;
+}
+
+.photo-main {
+    position: absolute;
+    width: 82%;
+    height: 420px;
+    left: 0;
+    top: 30px;
+
+    overflow: hidden;
+    border-radius: 30px;
+
+    background:
+        linear-gradient(135deg, #276e3b, #77bf65);
+
+    box-shadow: var(--shadow);
+}
+
+.photo-main::before {
+    content: "🌳";
+    position: absolute;
+    font-size: 180px;
+    left: 25%;
+    top: 25%;
+    filter: drop-shadow(0 20px 15px rgba(0,0,0,.15));
+}
+
+.photo-main::after {
+    content: "Gepflegte Außenflächen";
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
+    padding: 10px 14px;
+    border-radius: 10px;
+
+    color: white;
+    background: rgba(0,0,0,.45);
+    backdrop-filter: blur(8px);
+
+    font-weight: 800;
+}
+
+.floating-card {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+
+    width: 210px;
+    padding: 20px;
+
+    background: white;
+    border-radius: 18px;
+
+    box-shadow: var(--shadow);
+
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.floating-card .big {
+    font-size: 35px;
+}
+
+.floating-card strong {
+    display: block;
+    margin-top: 3px;
+}
+
+.floating-card small {
+    color: var(--muted);
+}
+
+.check-list {
+    display: grid;
+    gap: 13px;
+    margin-top: 30px;
+}
+
+.check {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+
+    padding: 15px 17px;
+
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+
+    transition: .25s;
+}
+
+.check:hover {
+    transform: translateX(7px);
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
+}
+
+.check-icon {
+    flex-shrink: 0;
+
+    width: 30px;
+    height: 30px;
+
+    display: grid;
+    place-items: center;
+
+    background: #e0f6df;
+    color: var(--green);
+
+    border-radius: 50%;
+
+    font-weight: 950;
+}
+
+/* PROJECTS */
+
+.projects {
+    background: white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin-top: 45px;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    min-height: 350px;
+    border-radius: 22px;
+
+    background: linear-gradient(135deg,#d8ead8,#9fc89c);
+}
+
+.project-content {
+    position: absolute;
+    inset: auto 20px 20px 20px;
+
+    padding: 18px;
+
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(12px);
+
+    border-radius: 15px;
+}
+
+.project-icon {
+    font-size: 35px;
+}
+
+.project h3 {
+    margin-top: 5px;
+}
+
+.project p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.project-1 {
+    background:
+        linear-gradient(135deg,rgba(10,50,25,.15),rgba(10,80,35,.25)),
+        url("images/projekt-garten.jpg") center/cover;
+}
+
+.project-2 {
+    background:
+        linear-gradient(135deg,rgba(10,50,25,.15),rgba(10,80,35,.25)),
+        url("images/projekt-pflaster.jpg") center/cover;
+}
+
+/* BEFORE AFTER */
+
+.before-after {
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 25px;
+    background: #f0f7ee;
+    border: 1px solid var(--border);
+}
+
+.before-after-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.before-after-title h3 {
+    font-size: 25px;
+}
+
+.before-after-box {
+    position: relative;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #d5e8d4;
+}
+
+.before,
+.after {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.before {
+    width: 50%;
+    background:
+        linear-gradient(135deg,#aaa,#d1d1d1);
+}
+
+.after {
+    background:
+        linear-gradient(135deg,#6eb36a,#b8d98b);
+}
+
+.before-content,
+.after-content {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 65px;
+}
+
+.before-content {
+    filter: grayscale(1);
+}
+
+.slider-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+
+    width: 4px;
+
+    background: white;
+
+    transform: translateX(-50%);
+
+    z-index: 5;
+}
+
+.slider-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    width: 45px;
+    height: 45px;
+
+    transform: translate(-50%,-50%);
+
+    border: 4px solid white;
+    border-radius: 50%;
+
+    background: var(--green);
+    color: white;
+
+    z-index: 6;
+    font-weight: 900;
+}
+
+/* PROCESS */
+
+.process {
+    background: var(--green-dark);
+    color: white;
+}
+
+.process .section-label {
+    color: var(--lime);
+}
+
+.process .section-title {
+    color: white;
+}
+
+.process .section-description {
+    color: #bdd0c3;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 18px;
+    margin-top: 50px;
+}
+
+.process-card {
+    position: relative;
+    padding: 25px;
+
+    border: 1px solid rgba(255,255,255,.13);
+    border-radius: 20px;
+
+    background: rgba(255,255,255,.06);
+
+    transition: .3s;
+}
+
+.process-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,.10);
+}
+
+.process-number {
+    font-size: 12px;
+    color: var(--lime);
+    font-weight: 950;
+}
+
+.process-icon {
+    font-size: 35px;
+    margin: 25px 0 18px;
+}
+
+.process-card h3 {
+    font-size: 20px;
+}
+
+.process-card p {
+    margin-top: 8px;
+    color: #b9ccc0;
+    font-size: 14px;
+}
+
+/* CONTACT */
+
+.contact {
+    background:
+        radial-gradient(circle at 90% 10%, #dff5ff, transparent 25%),
+        var(--cream);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contact-details {
+    margin-top: 30px;
+    display: grid;
+    gap: 13px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+
+    padding: 15px;
+
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+}
+
+.contact-item-icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+
+    background: #e9f6e9;
+    border-radius: 11px;
+}
+
+.contact-item small {
+    display: block;
+    color: var(--muted);
+}
+
+.contact-item strong {
+    display: block;
+    margin-top: 2px;
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.field {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 850;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #d6e1d7;
+    border-radius: 11px;
+
+    background: #fbfdfb;
+
+    padding: 14px;
+
+    color: var(--text);
+
+    transition: .2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 4px rgba(25,138,69,.09);
+    outline: none;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-note {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* CTA */
+
+.final-cta {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(135deg,#146936,#0d4b2b);
+
+    color: white;
+    text-align: center;
+}
+
+.final-cta::before {
+    content: "🌿";
+    position: absolute;
+    left: 8%;
+    top: 30%;
+    font-size: 100px;
+    opacity: .08;
+    transform: rotate(-20deg);
+}
+
+.final-cta::after {
+    content: "✂️";
+    position: absolute;
+    right: 8%;
+    top: 30%;
+    font-size: 90px;
+    opacity: .08;
+    transform: rotate(20deg);
+}
+
+.final-cta .section-title {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 50px 20px 25px;
+    background: #071d10;
+    color: white;
+}
+
+.footer-grid {
+    width: min(1200px,100%);
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-brand p {
+    max-width: 350px;
+    color: #9caf9f;
+    margin-top: 13px;
+}
+
+footer h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: grid;
+    gap: 9px;
+    color: #aebdb2;
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: var(--lime);
+}
+
+.footer-bottom {
+    width: min(1200px,100%);
+    margin: 40px auto 0;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255,255,255,.10);
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    color: #738378;
+    font-size: 11px;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+
+    z-index: 3000;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #20bd5a;
+    color: white;
+
+    font-size: 25px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,.20);
+
+    transition: .25s;
+}
+
+.whatsapp:hover {
+    transform: translateY(-5px) scale(1.06);
+}
+
+/* REVEAL ANIMATION */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity .7s ease,
+        transform .7s cubic-bezier(.2,.8,.2,1);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+
+@media(max-width: 900px) {
+
+    .nav-links {
+        position: fixed;
+        top: 92px;
+        left: 20px;
+        right: 20px;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 20px;
+
+        background: white;
+        border-radius: 18px;
+
+        box-shadow: var(--shadow);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 12px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav > .nav-cta {
+        display: none;
+    }
+
+    .hero {
+        min-height: 820px;
+    }
+
+    .hero-tools {
+        opacity: .12;
+        right: -120px;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .trust-item:nth-child(2) {
+        border-right: 0;
+    }
+
+    .trust-item:nth-child(-n+2) {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-visual {
+        min-height: 470px;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 600px) {
+
+    header {
+        padding: 9px 10px;
+    }
+
+    .nav {
+        height: 62px;
+        padding: 0 12px;
+        border-radius: 15px;
+    }
+
+    .logo-mark {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo-text strong {
+        font-size: 12px;
+    }
+
+    .logo-text small {
+        font-size: 7px;
+    }
+
+    .hero-content {
+        width: min(100% - 30px, 1200px);
+        padding-top: 80px;
+    }
+
+    .hero h1 {
+        font-size: clamp(45px, 13vw, 65px);
+        letter-spacing: -3px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    section {
+        padding: 75px 16px;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr 1fr;
+        width: calc(100% - 25px);
+    }
+
+    .trust-item {
+        padding: 18px 8px;
+    }
+
+    .trust-item strong {
+        font-size: 12px;
+    }
+
+    .trust-item span {
+        font-size: 10px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: 230px;
+    }
+
+    .services-header {
+        display: block;
+    }
+
+    .about-grid {
+        gap: 35px;
+    }
+
+    .photo-main {
+        width: 88%;
+        height: 370px;
+    }
+
+    .floating-card {
+        width: 170px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .before-after {
+        padding: 16px;
+    }
+
+    .before-after-box {
+        height: 250px;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        display: block;
+    }
+
+    .footer-bottom div + div {
+        margin-top: 8px;
+    }
+
+    .whatsapp {
+        width: 52px;
+        height: 52px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* REDUCE MOTION */
+
+@media(prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
 </style>
-
-  <!-- Strukturierte Daten für Google (lokales Unternehmen).
-       TODO: Telefonnummer und E-Mail hier ebenfalls eintragen. -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Daris Bau und Grün Werk",
-    "description": "Gartenservice, Grünpflege, Außenreinigung und Reinigungsservice in Bremen und Umgebung.",
-    "url": "https://DEINE-DOMAIN/",
-    "telephone": "+4942100000000",
-    "email": "info@deine-domain.de",
-    "address": { "@type": "PostalAddress", "addressLocality": "Bremen", "addressCountry": "DE" },
-    "areaServed": [{ "@type": "City", "name": "Bremen" }, "Bremen und Umgebung"],
-    "knowsAbout": ["Gartenpflege", "Heckenschnitt", "Pflasterreinigung", "Außenreinigung", "Unkrautentfernung", "Glasreinigung", "Reinigungsservice"]
-  }
-  </script>
 </head>
 
+
 <body>
-  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
 
-  <!-- Icon-Sammlung: wird weiter unten mit <use href="#i-..."> verwendet -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14z"/><path d="M5 19c3-5 6-8 10-10"/></symbol>
-    <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></symbol>
-    <symbol id="i-pavers" viewBox="0 0 24 24"><path d="M3 5h18v6H3zM3 13h18v6H3zM9 5v6M15 13v6"/></symbol>
-    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></symbol>
-    <symbol id="i-window" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M12 4v16M4 12h16"/></symbol>
-    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16v4M17 18h4"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
-    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.2 18.8L4 20z"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
-  </svg>
+<a class="skip-link" href="#main">
+    Zum Inhalt springen
+</a>
 
-  <!-- ================= HEADER ================= -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <!-- LOGO: Bild austauschen = Datei data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4Ij4KICA8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSIxMiIgZmlsbD0iIzBFM0IyQyIvPgogIDwhLS0gQmxhdHQgLS0+CiAgPHBhdGggZD0iTTEyIDMxQzEyIDIwIDE4IDEzIDMzIDEzYzAgMTItNyAxOC0yMSAxOHoiIGZpbGw9IiM1QkJGN0YiLz4KICA8cGF0aCBkPSJNMTMgMzFjNS03IDEwLTExIDE2LTE0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwRTNCMkMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPCEtLSBQZmxhc3RlcmZ1Z2VuIC0tPgogIDxwYXRoIGQ9Ik0xMCAzN2gyOE0xMCA0MWgyOE0yMiAzN3Y0TTMxIDQxdjMiIHN0cm9rZT0iIzlGQzdCMCIgc3Ryb2tlLXdpZHRoPSIxLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iLjgiLz4KPC9zdmc+Cg== ersetzen (oder hier den Dateinamen ändern) -->
-      <a class="brand" href="#start" aria-label="Daris Bau und Grün Werk – zur Startseite">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4Ij4KICA8cmVjdCB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHJ4PSIxMiIgZmlsbD0iIzBFM0IyQyIvPgogIDwhLS0gQmxhdHQgLS0+CiAgPHBhdGggZD0iTTEyIDMxQzEyIDIwIDE4IDEzIDMzIDEzYzAgMTItNyAxOC0yMSAxOHoiIGZpbGw9IiM1QkJGN0YiLz4KICA8cGF0aCBkPSJNMTMgMzFjNS03IDEwLTExIDE2LTE0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwRTNCMkMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPCEtLSBQZmxhc3RlcmZ1Z2VuIC0tPgogIDxwYXRoIGQ9Ik0xMCAzN2gyOE0xMCA0MWgyOE0yMiAzN3Y0TTMxIDQxdjMiIHN0cm9rZT0iIzlGQzdCMCIgc3Ryb2tlLXdpZHRoPSIxLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iLjgiLz4KPC9zdmc+Cg==" alt="" width="44" height="44">
-        <span>
-          <span class="brand-name">Daris</span>
-          <span class="brand-sub">Bau und Grün Werk</span>
-        </span>
-      </a>
+<div class="progress" id="progress"></div>
 
-      <nav class="nav" id="nav" aria-label="Hauptnavigation">
-        <a href="#start">Startseite</a>
-        <a href="#leistungen">Leistungen</a>
-        <a href="#ueber-uns">Über uns</a>
-        <a href="#referenzen">Referenzen</a>
-        <a href="#ablauf">Ablauf</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
+<div class="leaf one">🍃</div>
+<div class="leaf two">🌿</div>
+<div class="leaf three">🍃</div>
 
-      <a class="btn btn-primary btn-sm header-cta" href="#kontakt">Kostenloses Angebot</a>
 
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+<!-- ================= HEADER ================= -->
 
-  <main id="inhalt">
+<header>
 
-    <!-- ================= HERO ================= -->
-    <section class="hero" id="start">
-      <!-- HERO-BILD: Eigenes Foto als images/hero.jpg speichern und hier "hero.svg" in "hero.jpg" ändern -->
-      <img class="hero-bg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAwIDkwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjQTlDQkUzIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0U0RjBFQSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGF3biIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM0REEzNjQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMkE3QTQzIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJoZWRnZSIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMyRjhBNEYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMUI1RTM0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPHBhdHRlcm4gaWQ9InN0cmlwZXMiIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJza2V3WCgtMTIpIj4KICAgICAgPHJlY3Qgd2lkdGg9IjcwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjA3Ii8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgoKICA8IS0tIEhpbW1lbCB1bmQgU29ubmUgLS0+CiAgPHJlY3Qgd2lkdGg9IjE2MDAiIGhlaWdodD0iOTAwIiBmaWxsPSJ1cmwoI3NreSkiLz4KICA8Y2lyY2xlIGN4PSIxMjgwIiBjeT0iMTcwIiByPSI5MCIgZmlsbD0iI0ZGRjNDOSIgb3BhY2l0eT0iLjU1Ii8+CiAgPGNpcmNsZSBjeD0iMTI4MCIgY3k9IjE3MCIgcj0iNTgiIGZpbGw9IiNGRkY2RDgiLz4KCiAgPCEtLSBGZXJuZSBIw7xnZWwgLS0+CiAgPHBhdGggZD0iTTAgNTIwIEMyNjAgNDMwIDQ3MCA0NzAgNzIwIDUwMCBTMTIzMCA0NDAgMTYwMCA1MDAgVjkwMCBIMFoiIGZpbGw9IiM4Q0MzQTAiLz4KICA8cGF0aCBkPSJNMCA1ODUgQzMwMCA1MjAgNjIwIDU2NSA5MDAgNTQ1IFMxNDAwIDUyMCAxNjAwIDU2MCBWOTAwIEgwWiIgZmlsbD0iIzVEQUU3OCIvPgoKICA8IS0tIELDpHVtZSByZWNodHMgLS0+CiAgPHJlY3QgeD0iMTMyNSIgeT0iNDEwIiB3aWR0aD0iMjIiIGhlaWdodD0iMTcwIiBmaWxsPSIjNUI0NjM2Ii8+CiAgPGNpcmNsZSBjeD0iMTMzNiIgY3k9IjM4MCIgcj0iOTUiIGZpbGw9IiMyRjhBNEYiLz4KICA8Y2lyY2xlIGN4PSIxMjkwIiBjeT0iNDIwIiByPSI2MiIgZmlsbD0iIzNCOUE1QiIvPgogIDxjaXJjbGUgY3g9IjEzODUiIGN5PSI0MjUiIHI9IjU4IiBmaWxsPSIjMjc3OTRBIi8+CiAgPHJlY3QgeD0iMTUwMCIgeT0iNDUwIiB3aWR0aD0iMTYiIGhlaWdodD0iMTMwIiBmaWxsPSIjNUI0NjM2Ii8+CiAgPGNpcmNsZSBjeD0iMTUwOCIgY3k9IjQzMCIgcj0iNjIiIGZpbGw9IiMzQjlBNUIiLz4KCiAgPCEtLSBHZXBmbGVndGUgSGVja2UgLS0+CiAgPHJlY3QgeD0iNzYwIiB5PSI1MjAiIHdpZHRoPSI4NDAiIGhlaWdodD0iMTMwIiByeD0iMzAiIGZpbGw9InVybCgjaGVkZ2UpIi8+CiAgPHJlY3QgeD0iNzYwIiB5PSI1MjAiIHdpZHRoPSI4NDAiIGhlaWdodD0iMjYiIHJ4PSIxMyIgZmlsbD0iIzREQjA3NCIgb3BhY2l0eT0iLjU1Ii8+CgogIDwhLS0gUmFzZW4gLS0+CiAgPHBhdGggZD0iTTAgNjQwIEM0MDAgNjE1IDkwMCA2MjUgMTYwMCA2NDAgVjkwMCBIMFoiIGZpbGw9InVybCgjbGF3bikiLz4KICA8cGF0aCBkPSJNMCA2NDAgQzQwMCA2MTUgOTAwIDYyNSAxNjAwIDY0MCBWOTAwIEgwWiIgZmlsbD0idXJsKCNzdHJpcGVzKSIvPgoKICA8IS0tIFBmbGFzdGVyd2VnIGluIGRlciBNaXR0ZSAtLT4KICA8cGF0aCBkPSJNNjQwIDY0NSBMOTAwIDY0NSBMMTE4MCA5MDAgTDM2MCA5MDBaIiBmaWxsPSIjRDhEM0M2Ii8+CiAgPGcgc3Ryb2tlPSIjQjlCM0EzIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiPgogICAgPHBhdGggZD0iTTY1MyA2OTAgTDg4NyA2OTAiLz4KICAgIDxwYXRoIGQ9Ik02MTAgNzQ1IEw5MzAgNzQ1Ii8+CiAgICA8cGF0aCBkPSJNNTYwIDgxMCBMOTkwIDgxMCIvPgogICAgPHBhdGggZD0iTTc3MCA2NDUgTDc3MCA2OTBNNzIwIDY5MCBMNzAwIDc0NU04MjAgNjkwIEw4NDAgNzQ1TTY3MCA3NDUgTDY0MCA4MTBNNzcwIDc0NSBMNzcwIDgxME04NzAgNzQ1IEw5MDAgODEwTTYwMCA4MTAgTDU3MCA5MDBNNzcwIDgxMCBMNzcwIDkwME05NDAgODEwIEw5NzAgOTAwIi8+CiAgPC9nPgoKICA8IS0tIEJlZXQgbWl0IEJsdW1lbiBsaW5rcyB2b20gV2VnIC0tPgogIDxlbGxpcHNlIGN4PSI0MzAiIGN5PSI3MjAiIHJ4PSIyMzAiIHJ5PSI0NiIgZmlsbD0iIzVBNDYzNiIvPgogIDxnIGZpbGw9IiNGNEYxRUEiPjxjaXJjbGUgY3g9IjMzMCIgY3k9IjcwNSIgcj0iMTEiLz48Y2lyY2xlIGN4PSIzOTUiIGN5PSI2OTAiIHI9IjEyIi8+PGNpcmNsZSBjeD0iNDcwIiBjeT0iNzAwIiByPSIxMSIvPjxjaXJjbGUgY3g9IjUzNSIgY3k9IjcxMiIgcj0iMTIiLz48L2c+CiAgPGcgZmlsbD0iI0YyQjhDNiI+PGNpcmNsZSBjeD0iMzYwIiBjeT0iNzI4IiByPSIxMCIvPjxjaXJjbGUgY3g9IjQzMCIgY3k9IjcxNiIgcj0iMTEiLz48Y2lyY2xlIGN4PSI1MDUiIGN5PSI3MzAiIHI9IjEwIi8+PC9nPgogIDxnIGZpbGw9IiMzRTlBNTUiPjxjaXJjbGUgY3g9IjMwMCIgY3k9IjcyMiIgcj0iMTQiLz48Y2lyY2xlIGN4PSI0MTAiIGN5PSI3MzUiIHI9IjE1Ii8+PGNpcmNsZSBjeD0iNTYwIiBjeT0iNzI4IiByPSIxNCIvPjwvZz4KPC9zdmc+Cg==" alt="Gepflegter Garten mit Hecke, Rasen und Pflasterweg" width="1600" height="900" fetchpriority="high">
-      <div class="container hero-content">
-        <h1>Wir bringen Ihren Garten und Ihre Außenflächen wieder zum Strahlen.</h1>
-        <p class="hero-lead">Professionelle Gartenpflege, Außenreinigung und Grünpflege in Bremen und Umgebung – zuverlässig, sauber und gründlich.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#kontakt">Kostenloses Angebot anfragen</a>
-          <a class="btn btn-ghost" href="#leistungen">Unsere Leistungen</a>
-        </div>
-        <ul class="hero-facts">
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Kostenlos und unverbindlich</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Bremen und Umgebung</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Für Privat- und Gewerbekunden</li>
-        </ul>
-      </div>
-    </section>
+<nav class="nav">
 
-    <!-- ================= LEISTUNGEN ================= -->
-    <section class="section" id="leistungen">
-      <div class="container">
-        <h2>Unsere Leistungen für Garten und Außenbereich</h2>
-        <p class="section-intro">Vom Gartenservice in Bremen bis zur gründlichen Außenreinigung: Wir übernehmen die Arbeiten, die Sie nicht selbst erledigen können oder wollen.</p>
+<a href="#" class="logo" aria-label="Daris Bau und Grün Werk Startseite">
 
-        <div class="services-grid">
-
-          <article class="card">
-            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></span>
-            <h3>Gartenpflege</h3>
-            <p>Regelmäßig oder einmalig: Wir sorgen dafür, dass Ihr Garten gepflegt aussieht und Sie die Zeit lieber genießen.</p>
-            <ul class="ticks">
-              <li>Rasenpflege</li>
-              <li>Unkrautentfernung</li>
-              <li>Laubentfernung</li>
-              <li>Allgemeine Gartenarbeiten</li>
-              <li>Pflege von Beeten und Außenflächen</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-scissors"/></svg></span>
-            <h3>Heckenschnitt &amp; Sträucher</h3>
-            <p>Wir schneiden Hecken und Sträucher fachgerecht, ob als klarer Formschnitt oder als kräftiger Rückschnitt.</p>
-            <ul class="ticks">
-              <li>Heckenschnitt</li>
-              <li>Strauchschnitt</li>
-              <li>Formschnitt</li>
-              <li>Rückschnitt</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-pavers"/></svg></span>
-            <h3>Pflaster- &amp; Außenflächenreinigung</h3>
-            <p>Wir reinigen Pflaster und befestigte Flächen gründlich und entfernen Bewuchs aus den Fugen.</p>
-            <ul class="ticks">
-              <li>Pflastersteinreinigung</li>
-              <li>Unkrautentfernung aus Fugen</li>
-              <li>Hochdruckreinigung</li>
-              <li>Reinigung von Terrassen und Wegen</li>
-              <li>Fugenpflege</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-drop"/></svg></span>
-            <h3>Außenreinigung</h3>
-            <p>Schmutz, Moos und Ablagerungen verschwinden von den Flächen rund um Ihr Haus.</p>
-            <ul class="ticks">
-              <li>Terrassen</li>
-              <li>Einfahrten</li>
-              <li>Gehwege</li>
-              <li>Mauern</li>
-              <li>Außenbereiche</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-window"/></svg></span>
-            <h3>Glas- &amp; Dachreinigung</h3>
-            <p>Klare Sicht auch dort, wo man schlecht hinkommt. Was an Ihrem Objekt möglich ist, besprechen wir vorab mit Ihnen.</p>
-            <ul class="ticks">
-              <li>Glasdächer</li>
-              <li>Terrassenüberdachungen</li>
-              <li>Schwer erreichbare Glasflächen</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <span class="card-icon"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg></span>
-            <h3>Grundreinigung &amp; weitere Reinigungsarbeiten</h3>
-            <p>Sie haben einen besonderen Auftrag? Als Reinigungsservice in Bremen finden wir eine passende Lösung.</p>
-            <ul class="ticks">
-              <li>Gründliche Reinigung</li>
-              <li>Entfernung von Schmutz und Ablagerungen</li>
-              <li>Individuelle Reinigungsaufträge</li>
-            </ul>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Kleiner CTA-Streifen -->
-    <div class="cta-strip">
-      <div class="container cta-strip-inner">
-        <p>Welche Arbeiten stehen bei Ihnen an? Wir machen Ihnen ein Angebot.</p>
-        <a class="btn btn-primary" href="#kontakt">Kostenloses Angebot anfragen</a>
-      </div>
+    <div class="logo-mark">
+        🌿
     </div>
 
-    <!-- ================= WARUM WIR ================= -->
-    <section class="section why" id="warum">
-      <div class="container">
-        <h2>Warum Daris Bau und Grün Werk?</h2>
-        <p class="section-intro">Sie bekommen einen Betrieb, der zuhört, sauber arbeitet und klar sagt, was es kostet.</p>
-        <ul class="why-grid">
-          <li><span class="why-check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><div><strong>Zuverlässig</strong><span>Wir halten Absprachen und Termine ein.</span></div></li>
-          <li><span class="why-check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><div><strong>Saubere und gründliche Arbeit</strong><span>Wir arbeiten sorgfältig, bis das Ergebnis stimmt.</span></div></li>
-          <li><span class="why-check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><div><strong>Faire und transparente Preise</strong><span>Sie erhalten vorab ein klares, kostenloses Angebot.</span></div></li>
-          <li><span class="why-check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><div><strong>Professionelles Equipment</strong><span>Wir arbeiten mit Geräten, die für saubere Ergebnisse gemacht sind.</span></div></li>
-          <li><span class="why-check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><div><strong>Individuelle Lösungen</strong><span>Jeder Garten ist anders. Wir passen den Auftrag an Ihren Bedarf an.</span></div></li>
-          <li><span class="why-check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span><div><strong>Persönlicher Kontakt</strong><span>Sie sprechen direkt mit uns, ohne Callcenter.</span></div></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ================= ÜBER UNS =================
-         TODO: Ersetze den Text durch deine eigene Geschichte (Gründung, Erfahrung, Team).
-         Nur Angaben machen, die stimmen. -->
-    <section class="section" id="ueber-uns">
-      <div class="container about-grid">
-        <div>
-          <h2>Ein Betrieb aus Bremen für Garten und Außenflächen</h2>
-          <p>Daris Bau und Grün Werk kümmert sich um Gärten, Grünflächen und Außenbereiche in Bremen und Umgebung. Ob Privatgarten, Mehrfamilienhaus oder Firmengelände: Wir packen an, arbeiten sauber und sprechen offen mit Ihnen über Aufwand und Kosten.</p>
-          <p>Von der regelmäßigen Gartenpflege über Heckenschnitt bis zur Pflasterreinigung bekommen Sie alles aus einer Hand, mit einem festen Ansprechpartner.</p>
-          <a class="btn btn-outline" href="#kontakt">Kontakt aufnehmen</a>
-        </div>
-        <div class="about-panel">
-          <dl>
-            <dt>Einsatzgebiet</dt>
-            <dd>Bremen und Umgebung</dd>
-            <dt>Für wen wir arbeiten</dt>
-            <dd>Privatkunden, Hausbesitzer, Vermieter, Immobilienbesitzer und Unternehmen</dd>
-            <dt>Unsere Schwerpunkte</dt>
-            <dd>Gartenservice, Grünpflege, Außenreinigung und Reinigungsservice</dd>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= REFERENZEN =================
-         BILDER AUSTAUSCHEN: Eigene Fotos in den Ordner images/ legen und unten die Dateinamen ändern.
-         Wichtig: Vorher- und Nachher-Foto sollten vom gleichen Standpunkt aus aufgenommen sein, Format 3:2 (quer). -->
-    <section class="section references" id="referenzen">
-      <div class="container">
-        <h2>Vorher und Nachher: Unsere Arbeit im Vergleich</h2>
-        <p class="section-intro">Ziehen Sie den Regler und sehen Sie, was eine gründliche Reinigung und Pflege bewirkt.</p>
-
-        <div class="ba-grid">
-          <figure class="ba-item">
-            <div class="ba">
-              <img class="ba-after" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiPgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhdmVycyIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI4MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iODAiIGZpbGw9IiNDOUMyQUYiLz4KICAgICAgPGcgZmlsbD0iI0Q5RDVDQiI+CiAgICAgICAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9Ijc2IiBoZWlnaHQ9IjM2IiByeD0iMyIvPgogICAgICAgIDxyZWN0IHg9IjgyIiB5PSIyIiB3aWR0aD0iNzYiIGhlaWdodD0iMzYiIHJ4PSIzIi8+CiAgICAgICAgPHJlY3QgeD0iLTM4IiB5PSI0MiIgd2lkdGg9Ijc2IiBoZWlnaHQ9IjM2IiByeD0iMyIvPgogICAgICAgIDxyZWN0IHg9IjQyIiB5PSI0MiIgd2lkdGg9Ijc2IiBoZWlnaHQ9IjM2IiByeD0iMyIvPgogICAgICAgIDxyZWN0IHg9IjEyMiIgeT0iNDIiIHdpZHRoPSI3NiIgaGVpZ2h0PSIzNiIgcng9IjMiLz4KICAgICAgPC9nPgogICAgICA8ZyBmaWxsPSIjRTRFMUQ5IiBvcGFjaXR5PSIuNyI+CiAgICAgICAgPHJlY3QgeD0iMTAiIHk9IjgiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxNCIgcng9IjMiLz4KICAgICAgICA8cmVjdCB4PSIxMDAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMTYiIHJ4PSIzIi8+CiAgICAgICAgPHJlY3QgeD0iNjAiIHk9IjUwIiB3aWR0aD0iMzQiIGhlaWdodD0iMTQiIHJ4PSIzIi8+CiAgICAgIDwvZz4KICAgIDwvcGF0dGVybj4KICAgIDxwYXR0ZXJuIGlkPSJtb3ciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJza2V3WCgtMTIpIj4KICAgICAgPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjEyMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjA4Ii8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgoKICA8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjcGF2ZXJzKSIvPgoKICA8IS0tIEdlcGZsZWd0ZXIgUmFzZW5yYW5kIG9iZW4gLS0+CiAgPHBhdGggZD0iTTAgMCBIMTIwMCBWODQgSDBaIiBmaWxsPSIjM0U5QTU1Ii8+CiAgPHBhdGggZD0iTTAgMCBIMTIwMCBWODQgSDBaIiBmaWxsPSJ1cmwoI21vdykiLz4KICA8cmVjdCB5PSI4NCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iNiIgZmlsbD0iI0I5QjI5RSIvPgo8L3N2Zz4K" alt="Pflasterfläche nach der Reinigung, saubere Fugen und gepflegter Rasenrand" width="1200" height="800" loading="lazy">
-              <img class="ba-before" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiPgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9InBhdmVycyIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI4MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxyZWN0IHdpZHRoPSIxNjAiIGhlaWdodD0iODAiIGZpbGw9IiM1RTVENTIiLz4KICAgICAgPGcgZmlsbD0iI0EzOUY5MiI+CiAgICAgICAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9Ijc2IiBoZWlnaHQ9IjM2IiByeD0iMyIvPgogICAgICAgIDxyZWN0IHg9IjgyIiB5PSIyIiB3aWR0aD0iNzYiIGhlaWdodD0iMzYiIHJ4PSIzIi8+CiAgICAgICAgPHJlY3QgeD0iLTM4IiB5PSI0MiIgd2lkdGg9Ijc2IiBoZWlnaHQ9IjM2IiByeD0iMyIvPgogICAgICAgIDxyZWN0IHg9IjQyIiB5PSI0MiIgd2lkdGg9Ijc2IiBoZWlnaHQ9IjM2IiByeD0iMyIvPgogICAgICAgIDxyZWN0IHg9IjEyMiIgeT0iNDIiIHdpZHRoPSI3NiIgaGVpZ2h0PSIzNiIgcng9IjMiLz4KICAgICAgPC9nPgogICAgICA8ZyBmaWxsPSIjOEU4QTdEIiBvcGFjaXR5PSIuNiI+CiAgICAgICAgPHJlY3QgeD0iMTAiIHk9IjgiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxNCIgcng9IjMiLz4KICAgICAgICA8cmVjdCB4PSIxMDAiIHk9IjEwIiB3aWR0aD0iNDAiIGhlaWdodD0iMTYiIHJ4PSIzIi8+CiAgICAgICAgPHJlY3QgeD0iNjAiIHk9IjUwIiB3aWR0aD0iMzQiIGhlaWdodD0iMTQiIHJ4PSIzIi8+CiAgICAgIDwvZz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CgogIDxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgZmlsbD0idXJsKCNwYXZlcnMpIi8+CgogIDwhLS0gRHJlY2sgdW5kIE1vb3MgLS0+CiAgPGcgZmlsbD0iIzRGNkIyRSIgb3BhY2l0eT0iLjUiPgogICAgPGVsbGlwc2UgY3g9IjIyMCIgY3k9IjMwMCIgcng9IjEzMCIgcnk9IjQ2Ii8+CiAgICA8ZWxsaXBzZSBjeD0iNjQwIiBjeT0iNDcwIiByeD0iMTcwIiByeT0iNTIiLz4KICAgIDxlbGxpcHNlIGN4PSI5NTAiIGN5PSIyNTAiIHJ4PSIxMTAiIHJ5PSI0MCIvPgogICAgPGVsbGlwc2UgY3g9IjM4MCIgY3k9IjY0MCIgcng9IjE1MCIgcnk9IjQ0Ii8+CiAgICA8ZWxsaXBzZSBjeD0iMTAwMCIgY3k9IjY2MCIgcng9IjEyMCIgcnk9IjM4Ii8+CiAgPC9nPgogIDxnIGZpbGw9IiMzQzNCMzMiIG9wYWNpdHk9Ii4zIj4KICAgIDxlbGxpcHNlIGN4PSI1MDAiIGN5PSIyMzAiIHJ4PSIxNDAiIHJ5PSIzNiIvPgogICAgPGVsbGlwc2UgY3g9IjgyMCIgY3k9IjU2MCIgcng9IjE1MCIgcnk9IjQwIi8+CiAgICA8ZWxsaXBzZSBjeD0iMTQwIiBjeT0iNTIwIiByeD0iOTAiIHJ5PSIzMCIvPgogIDwvZz4KCiAgPCEtLSBVbmtyYXV0IGluIGRlbiBGdWdlbiAtLT4KICA8ZyBzdHJva2U9IiM0RThBMkUiIHN0cm9rZS13aWR0aD0iNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIj4KICAgIDxwYXRoIGQ9Ik0xNjAgMzYwIHEtOCAtMzQgLTQgLTUyTTE2MCAzNjAgcTYgLTMwIDIwIC00NE0xNjAgMzYwIHEtMTggLTIyIC0zNCAtMzAiLz4KICAgIDxwYXRoIGQ9Ik00ODAgMjgwIHEtNiAtMzYgMiAtNTZNNDgwIDI4MCBxMTIgLTI2IDMwIC0zNCIvPgogICAgPHBhdGggZD0iTTc2MCAzNjAgcS0xMCAtMzAgLTYgLTUwTTc2MCAzNjAgcTggLTM0IDIyIC00Nk03NjAgMzYwIHEtMTggLTE4IC0zMCAtMjIiLz4KICAgIDxwYXRoIGQ9Ik0zMDAgNTIwIHEtNiAtMzAgMCAtNDhNMzAwIDUyMCBxMTIgLTI2IDI2IC0zNCIvPgogICAgPHBhdGggZD0iTTkwMCA0ODAgcS04IC0zNCAtMiAtNTRNOTAwIDQ4MCBxMTAgLTI4IDI2IC0zOE05MDAgNDgwIHEtMTYgLTIwIC0zMCAtMjYiLz4KICAgIDxwYXRoIGQ9Ik01NjAgNjgwIHEtNiAtMzIgMiAtNTJNNTYwIDY4MCBxMTIgLTI2IDI4IC0zNiIvPgogICAgPHBhdGggZD0iTTEwNjAgNDAwIHEtOCAtMzAgLTQgLTQ4TTEwNjAgNDAwIHE4IC0yNiAyMiAtMzQiLz4KICA8L2c+CgogIDwhLS0gVmVyd2lsZGVydGVyIFJhc2VucmFuZCBvYmVuIC0tPgogIDxwYXRoIGQ9Ik0wIDAgSDEyMDAgVjcwIEMxMTcwIDk2IDExNTAgNjAgMTExMCA5MiBTMTA0MCA2MiAxMDAwIDk2IFM5MjAgNjYgODgwIDk4IFM4MDAgNjQgNzYwIDk0IFM2ODAgNjYgNjQwIDk4IFM1NjAgNjQgNTIwIDk2IFM0NDAgNjYgNDAwIDk4IFMzMjAgNjQgMjgwIDk0IFMyMDAgNjYgMTYwIDk4IFM4MCA2NCA0MCA5MiBTMTAgODAgMCA4NFoiIGZpbGw9IiM1QjhDM0EiLz4KICA8ZyBzdHJva2U9IiM0NzZGMkIiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgIDxwYXRoIGQ9Ik02MCA5MCBsLTYgMzBNMTgwIDk4IGw4IDI4TTM0MCA5NiBsLTYgMzJNNTIwIDk4IGw4IDI2TTcwMCA5OCBsLTggMzBNODgwIDk4IGw2IDI4TTEwNDAgOTYgbC04IDI4Ii8+CiAgPC9nPgo8L3N2Zz4K" alt="Pflasterfläche vor der Reinigung, mit Moos und Unkraut in den Fugen" width="1200" height="800" loading="lazy">
-              <span class="ba-tag ba-tag-before">Vorher</span>
-              <span class="ba-tag ba-tag-after">Nachher</span>
-              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Vorher-Nachher-Vergleich Pflasterfläche">
-              <span class="ba-handle" aria-hidden="true"></span>
-            </div>
-            <figcaption>Pflasterreinigung: Moos und Unkraut aus den Fugen entfernt.</figcaption>
-          </figure>
-
-          <figure class="ba-item">
-            <div class="ba">
-              <img class="ba-after" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjQzVEQ0VCIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0U2RjBFQSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iaGVkZ2UiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMkY4QTRGIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzFCNUUzNCIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxwYXR0ZXJuIGlkPSJtb3ciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBwYXR0ZXJuVHJhbnNmb3JtPSJza2V3WCgtMTIpIj4KICAgICAgPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjEyMCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjA4Ii8+CiAgICA8L3BhdHRlcm4+CiAgPC9kZWZzPgoKICA8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9InVybCgjc2t5KSIvPgogIDwhLS0gWmF1biAvIE1hdWVyIGltIEhpbnRlcmdydW5kIC0tPgogIDxyZWN0IHk9IjMzMCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRDdEMkM2Ii8+CiAgPGcgc3Ryb2tlPSIjQkRCN0E4IiBzdHJva2Utd2lkdGg9IjMiPjxwYXRoIGQ9Ik0wIDM4MEgxMjAwTTAgNDMwSDEyMDBNMCA0ODBIMTIwMCIvPjwvZz4KICA8IS0tIFJhc2VuIC0tPgogIDxyZWN0IHk9IjU0MCIgd2lkdGg9IjEyMDAiIGhlaWdodD0iMjYwIiBmaWxsPSIjNEZBMDY0Ii8+CiAgPHJlY3QgeT0iNTQwIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIyNjAiIGZpbGw9InVybCgjbW93KSIvPgoKICA8IS0tIFNhdWJlciBnZXNjaG5pdHRlbmUgSGVja2UgLS0+CiAgPHJlY3QgeD0iNjAiIHk9IjIzMCIgd2lkdGg9IjEwODAiIGhlaWdodD0iMzkwIiByeD0iMjgiIGZpbGw9InVybCgjaGVkZ2UpIi8+CiAgPHJlY3QgeD0iNjAiIHk9IjIzMCIgd2lkdGg9IjEwODAiIGhlaWdodD0iMzQiIHJ4PSIxNyIgZmlsbD0iIzREQjA3NCIgb3BhY2l0eT0iLjU1Ii8+CiAgPCEtLSBGZWluZSBCbGF0dC1TdHJ1a3R1ciAtLT4KICA8ZyBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuMDUiPgogICAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iMzYwIiByPSI2MCIvPjxjaXJjbGUgY3g9IjQ0MCIgY3k9IjQyMCIgcj0iNzAiLz48Y2lyY2xlIGN4PSI3MDAiIGN5PSIzNTAiIHI9IjY1Ii8+PGNpcmNsZSBjeD0iOTYwIiBjeT0iNDMwIiByPSI3MCIvPgogIDwvZz4KICA8IS0tIFNhdWJlcmVyIEJvZGVuIC0tPgogIDxyZWN0IHg9IjYwIiB5PSI2MTgiIHdpZHRoPSIxMDgwIiBoZWlnaHQ9IjgiIGZpbGw9IiMzQjdBNDQiIG9wYWNpdHk9Ii41Ii8+Cjwvc3ZnPgo=" alt="Hecke nach dem Heckenschnitt, gerade und gepflegt" width="1200" height="800" loading="lazy">
-              <img class="ba-before" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgc2xpY2UiPgogIDxkZWZzPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJza3kiIHgxPSIwIiB5MT0iMCIgeDI9IjAiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjQzVEQ0VCIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0U2RjBFQSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CgogIDxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgZmlsbD0idXJsKCNza3kpIi8+CiAgPCEtLSBaYXVuIC8gTWF1ZXIgaW0gSGludGVyZ3J1bmQgLS0+CiAgPHJlY3QgeT0iMzMwIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNEN0QyQzYiLz4KICA8ZyBzdHJva2U9IiNCREI3QTgiIHN0cm9rZS13aWR0aD0iMyI+PHBhdGggZD0iTTAgMzgwSDEyMDBNMCA0MzBIMTIwME0wIDQ4MEgxMjAwIi8+PC9nPgogIDwhLS0gUmFzZW4gLS0+CiAgPHJlY3QgeT0iNTQwIiB3aWR0aD0iMTIwMCIgaGVpZ2h0PSIyNjAiIGZpbGw9IiM0RkEwNjQiLz4KICA8cmVjdCB5PSI1NDAiIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjI2MCIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjA0Ii8+CgogIDwhLS0gVmVyd2lsZGVydGUgSGVja2UgLS0+CiAgPHBhdGggZD0iTTYwIDYwMCBDNDAgNTIwIDkwIDQ3MCA3MCA0MTAgQzYwIDM1MCAxMzAgMzQwIDE1MCAyOTAgQzE4MCAyNDAgMjUwIDI3MCAyOTAgMjMwIEMzNDAgMTkwIDM5MCAyNDAgNDQwIDIxMCBDNTAwIDE3MCA1NDAgMjMwIDYwMCAyMDAgQzY2MCAxNzAgNzAwIDIzMCA3NjAgMjA1IEM4MjAgMTgwIDg3MCAyNDAgOTMwIDIyMCBDOTkwIDIwMCAxMDQwIDI2MCAxMDcwIDMyMCBDMTExMCAzNzAgMTE0MCA0MzAgMTEyMCA1MDAgQzExMTAgNTYwIDExNDAgNTkwIDExMzAgNjIwIEw2MCA2MjBaIiBmaWxsPSIjNDU2QjMzIi8+CiAgPGcgZmlsbD0iIzNBNUQyQiI+CiAgICA8Y2lyY2xlIGN4PSIyMDAiIGN5PSI0MjAiIHI9IjcwIi8+PGNpcmNsZSBjeD0iNDIwIiBjeT0iMzYwIiByPSI4MCIvPjxjaXJjbGUgY3g9IjcwMCIgY3k9IjQwMCIgcj0iODUiLz48Y2lyY2xlIGN4PSI5MzAiIGN5PSI0NDAiIHI9Ijc1Ii8+CiAgPC9nPgogIDxnIGZpbGw9IiM1Qzg3NDIiIG9wYWNpdHk9Ii44Ij4KICAgIDxjaXJjbGUgY3g9IjMwMCIgY3k9IjMzMCIgcj0iNDgiLz48Y2lyY2xlIGN4PSI1NjAiIGN5PSIzMDAiIHI9IjUyIi8+PGNpcmNsZSBjeD0iODIwIiBjeT0iMzIwIiByPSI1MCIvPjxjaXJjbGUgY3g9IjEwMDAiIGN5PSIzNjAiIHI9IjQwIi8+CiAgPC9nPgogIDwhLS0gQWJzdGVoZW5kZSBad2VpZ2UgLS0+CiAgPGcgc3Ryb2tlPSIjM0E1RDJCIiBzdHJva2Utd2lkdGg9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSI+CiAgICA8cGF0aCBkPSJNMTUwIDI5MCBsLTQwIC01ME0yOTAgMjMwIGwtMTAgLTYwTTQ0MCAyMTAgbDIwIC02NE02MDAgMjAwIGwtMTQgLTcwTTc2MCAyMDUgbDMwIC01Nk05MzAgMjIwIGwxNiAtNjJNMTA3MCAzMjAgbDU2IC0yNk03MCA0MTAgbC01MiAtMTQiLz4KICA8L2c+CiAgPCEtLSBXaWxkd3VjaHMgYW0gQm9kZW4gLS0+CiAgPGcgc3Ryb2tlPSIjM0Y3QTNBIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZmlsbD0ibm9uZSI+CiAgICA8cGF0aCBkPSJNMTIwIDYyNSBxLTYgLTMwIDAgLTUwTTE1MCA2MjggcTggLTI4IDIwIC00Mk01MDAgNjMwIHEtOCAtMzAgLTIgLTUyTTg0MCA2MjggcTYgLTM0IDE4IC00OE0xMDQwIDYyNiBxLTggLTMwIC0yIC01MCIvPgogIDwvZz4KPC9zdmc+Cg==" alt="Verwilderte, ungeschnittene Hecke vor dem Schnitt" width="1200" height="800" loading="lazy">
-              <span class="ba-tag ba-tag-before">Vorher</span>
-              <span class="ba-tag ba-tag-after">Nachher</span>
-              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Vorher-Nachher-Vergleich Hecke">
-              <span class="ba-handle" aria-hidden="true"></span>
-            </div>
-            <figcaption>Heckenschnitt: vom Wildwuchs zur klaren Form.</figcaption>
-          </figure>
-        </div>
-
-        <p class="more"><a class="btn btn-outline" href="#kontakt" data-projects>Weitere Projekte ansehen</a></p>
-      </div>
-    </section>
-
-    <!-- ================= ABLAUF ================= -->
-    <section class="section" id="ablauf">
-      <div class="container">
-        <h2>In vier Schritten zu Ihrem gepflegten Außenbereich</h2>
-        <p class="section-intro">Einfach und ohne Aufwand für Sie.</p>
-        <ol class="steps">
-          <li>
-            <h3>Anfrage senden</h3>
-            <p>Schildern Sie uns kurz Ihr Anliegen, gern mit Fotos, per Formular, Telefon oder WhatsApp.</p>
-          </li>
-          <li>
-            <h3>Kostenloses Angebot erhalten</h3>
-            <p>Wir melden uns bei Ihnen und erstellen ein klares Angebot für Ihren Auftrag.</p>
-          </li>
-          <li>
-            <h3>Termin vereinbaren</h3>
-            <p>Wir stimmen einen Termin ab, der zu Ihnen passt.</p>
-          </li>
-          <li>
-            <h3>Professionelle Ausführung</h3>
-            <p>Wir erledigen die Arbeiten gründlich und sauber, so wie besprochen.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ================= GROSSER CTA ================= -->
-    <section class="section cta-banner">
-      <div class="container">
-        <h2>Ihr Garten könnte besser aussehen.</h2>
-        <p>Wir kümmern uns darum.</p>
-        <a class="btn btn-light" href="#kontakt">Jetzt Anfrage senden</a>
-      </div>
-    </section>
-
-    <!-- ================= KONTAKT ================= -->
-    <section class="section" id="kontakt">
-      <div class="container contact-grid">
-
-        <div>
-          <h2>Kostenloses Angebot anfragen</h2>
-          <p class="section-intro" style="margin-bottom:0">Beschreiben Sie uns Ihren Auftrag, gern mit Fotos. Wir melden uns bei Ihnen mit einem Angebot.</p>
-
-          <!-- Die Kontaktdaten werden automatisch aus js/config.js eingesetzt -->
-          <ul class="contact-list">
-            <li><a href="#kontakt" data-tel><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span><small>Telefon</small><strong data-tel-text>Telefonnummer eintragen</strong></span></a></li>
-            <li><a href="#kontakt" data-mail><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span><small>E-Mail</small><strong data-mail-text>E-Mail eintragen</strong></span></a></li>
-            <li><a href="#kontakt" data-wa><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span><small>WhatsApp</small><strong>Nachricht schreiben</strong></span></a></li>
-            <li><span class="contact-row"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span><small>Einsatzgebiet</small><strong>Bremen und Umgebung</strong></span></span></li>
-          </ul>
-        </div>
-
-        <div class="form-card" id="formCard">
-          <h3>Ihre Anfrage</h3>
-          <form id="contactForm" novalidate>
-            <div class="form-grid">
-              <div class="field">
-                <label for="f-name">Name *</label>
-                <input id="f-name" name="name" type="text" autocomplete="name" required>
-              </div>
-              <div class="field">
-                <label for="f-tel">Telefonnummer</label>
-                <input id="f-tel" name="telefon" type="tel" autocomplete="tel">
-              </div>
-              <div class="field">
-                <label for="f-mail">E-Mail</label>
-                <input id="f-mail" name="email" type="email" autocomplete="email">
-              </div>
-              <div class="field">
-                <label for="f-ort">Adresse / Ort *</label>
-                <input id="f-ort" name="ort" type="text" autocomplete="street-address" required>
-              </div>
-              <div class="field full">
-                <label for="f-leistung">Gewünschte Leistung *</label>
-                <select id="f-leistung" name="leistung" required>
-                  <option value="">Bitte auswählen</option>
-                  <option>Gartenpflege</option>
-                  <option>Heckenschnitt &amp; Sträucher</option>
-                  <option>Pflaster- &amp; Außenflächenreinigung</option>
-                  <option>Außenreinigung</option>
-                  <option>Glas- &amp; Dachreinigung</option>
-                  <option>Grundreinigung &amp; weitere Reinigungsarbeiten</option>
-                  <option>Sonstiges</option>
-                </select>
-              </div>
-              <div class="field full">
-                <label for="f-text">Beschreibung des Auftrags *</label>
-                <textarea id="f-text" name="beschreibung" required placeholder="z. B. Größe der Fläche, was gemacht werden soll, gewünschter Zeitraum"></textarea>
-              </div>
-              <div class="field full">
-                <label for="f-bilder">Bilder hochladen (optional)</label>
-                <input id="f-bilder" name="bilder" type="file" accept="image/*" multiple>
-                <p class="hint">Bis zu 5 Bilder, je max. 5 MB.</p>
-                <ul class="file-list" id="fileList"></ul>
-              </div>
-
-              <!-- Spam-Falle: Bitte nicht löschen -->
-              <div class="hp" aria-hidden="true">
-                <label for="f-website">Website</label>
-                <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
-              </div>
-
-              <div class="full consent">
-                <input id="f-consent" name="datenschutz" type="checkbox" required>
-                <label for="f-consent">Ich habe die <a href="#datenschutz">Datenschutzerklärung</a> gelesen und bin damit einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verarbeitet werden. *</label>
-              </div>
-            </div>
-
-            <button class="btn btn-primary" type="submit" id="submitBtn">Angebot anfragen</button>
-            <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h2>Daris Bau und Grün Werk</h2>
-          <p>Gartenservice &amp; Reinigungsservice</p>
-          <p>Bremen und Umgebung</p>
-        </div>
-        <div>
-          <h3>Seiten</h3>
-          <ul>
-            <li><a href="#leistungen">Leistungen</a></li>
-            <li><a href="#referenzen">Referenzen</a></li>
-            <li><a href="#ablauf">Ablauf</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Rechtliches &amp; Kontakt</h3>
-          <ul>
-            <li><a href="#kontakt">Kontakt</a></li>
-            <li><a href="#impressum">Impressum</a></li>
-            <li><a href="#datenschutz">Datenschutz</a></li>
-          </ul>
-        </div>
-      </div>
-      <p class="footer-bottom">© <span data-year>2025</span> Daris Bau und Grün Werk. Alle Rechte vorbehalten.</p>
-    </div>
-  </footer>
-
-  <!-- ================= RECHTSTEXTE (werden erst beim Klick auf Impressum/Datenschutz angezeigt) ================= -->
-<section class="legal-section container legal" id="impressum">
-    <h2>Impressum</h2>
-
-    <div class="notice">
-      <strong>Hinweis für dich (vor der Veröffentlichung löschen):</strong> Dies ist eine Vorlage. Alle gelb markierten Stellen musst du mit deinen echten Daten ersetzen. Prüfe den Text vor der Veröffentlichung mit einem Generator (z. B. e-recht24.de) oder lass ihn rechtlich prüfen. Je nach Rechtsform und Tätigkeit können weitere Angaben Pflicht sein.
+    <div class="logo-text">
+        <strong>DARIS BAU & GRÜN WERK</strong>
+        <small>GARTEN • REINIGUNG • SERVICE</small>
     </div>
 
-    <h2>Angaben gemäß § 5 DDG</h2>
-    <p>
-      <mark>Daris Bau und Grün Werk</mark><br>
-      Inhaber: <mark>Vor- und Nachname</mark><br>
-      <mark>Straße und Hausnummer</mark><br>
-      <mark>PLZ</mark> Bremen
-    </p>
+</a>
 
-    <h2>Kontakt</h2>
-    <p>
-      Telefon: <mark>Telefonnummer</mark><br>
-      E-Mail: <mark>E-Mail-Adresse</mark>
-    </p>
 
-    <h2>Umsatzsteuer</h2>
-    <p>
-      <mark>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE000000000</mark><br>
-      <em>Falls du Kleinunternehmer bist und keine USt-IdNr. hast, kannst du diesen Abschnitt streichen oder den Hinweis zur Kleinunternehmerregelung (§ 19 UStG) ergänzen.</em>
-    </p>
+<div class="nav-links" id="navLinks">
 
-    <h2>Berufsrechtliche Angaben</h2>
-    <p>
-      <mark>Falls dein Betrieb in die Handwerksrolle eingetragen ist: zuständige Handwerkskammer und gesetzliche Berufsbezeichnung angeben. Andernfalls diesen Abschnitt löschen.</mark>
-    </p>
+    <a href="#leistungen">Leistungen</a>
 
-    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
-    <p>
-      <mark>Vor- und Nachname, Anschrift wie oben</mark>
-    </p>
+    <a href="#ueber-uns">Über uns</a>
 
-    <h2>Streitbeilegung</h2>
-    <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. <mark>Bitte prüfen, ob das für dich zutrifft.</mark></p>
-    <p><a class="btn btn-outline btn-sm" href="#start">Zurück nach oben</a></p>
-</section>
-<section class="legal-section container legal" id="datenschutz">
-    <h2>Datenschutzerklärung</h2>
+    <a href="#projekte">Projekte</a>
 
-    <div class="notice">
-      <strong>Hinweis für dich (vor der Veröffentlichung löschen):</strong> Dies ist eine Vorlage und keine Rechtsberatung. Gelb markierte Stellen musst du ausfüllen oder prüfen. Passe den Text an, wenn du Dienste änderst (z. B. anderes Hosting, anderes Formular-Tool, Analyse-Tools oder eingebettete Karten). Lass die Erklärung am besten mit einem Generator (z. B. e-recht24.de, datenschutz-generator.de) oder rechtlich prüfen.
-    </div>
+    <a href="#ablauf">Ablauf</a>
 
-    <h2>1. Verantwortlicher</h2>
-    <p>
-      <mark>Daris Bau und Grün Werk, Inhaber: Vor- und Nachname, Straße und Hausnummer, PLZ Bremen</mark><br>
-      E-Mail: <mark>E-Mail-Adresse</mark>, Telefon: <mark>Telefonnummer</mark>
-    </p>
+    <a href="#kontakt">Kontakt</a>
 
-    <h2>2. Hosting über GitHub Pages</h2>
-    <p>Diese Website wird über GitHub Pages betrieben (Anbieter: GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Beim Aufruf der Seite verarbeitet der Hosting-Anbieter technisch notwendige Daten, insbesondere Ihre IP-Adresse, Datum und Uhrzeit des Zugriffs sowie die aufgerufene Seite (Server-Logfiles). Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren und effizienten Bereitstellung der Website). Eine Übermittlung von Daten in die USA ist möglich. <mark>Bitte prüfe die aktuelle Datenschutzerklärung des Anbieters und die Grundlage für die Datenübermittlung und passe diesen Absatz an.</mark></p>
+    <a href="#kontakt" class="nav-cta">
+        Angebot anfragen →
+    </a>
 
-    <h2>3. Kontaktformular und Bildupload</h2>
-    <p>Wenn Sie uns über das Formular eine Anfrage senden, verarbeiten wir Ihre Angaben (Name, Telefonnummer, E-Mail-Adresse, Adresse/Ort, gewünschte Leistung, Beschreibung und ggf. hochgeladene Bilder) zur Bearbeitung Ihrer Anfrage und für eventuelle Rückfragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) bzw. Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Die Daten werden gelöscht, sobald sie für den Zweck nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
-    <p><mark>Die Formulardaten werden über den Automatisierungsdienst n8n (Anbieter und Serverstandort bitte eintragen) verarbeitet und in <strong>Google Sheets</strong> / per <strong>E-Mail</strong> gespeichert. Trage hier die tatsächlich verwendeten Dienste samt Anbieter und Standort ein und schließe mit den Anbietern die erforderlichen Verträge zur Auftragsverarbeitung ab.</mark></p>
+</div>
 
-    <h2>4. Kontakt per Telefon, E-Mail und WhatsApp</h2>
-    <p>Wenn Sie uns anrufen, per E-Mail oder per WhatsApp kontaktieren, verarbeiten wir Ihre Angaben zur Bearbeitung der Anfrage. Der WhatsApp-Link öffnet die App oder Website von WhatsApp (Anbieter: WhatsApp Ireland Limited). Erst mit dem Absenden einer Nachricht werden Daten an WhatsApp übertragen. <mark>Streiche diesen Hinweis, wenn du WhatsApp nicht anbietest.</mark></p>
 
-    <h2>5. Cookies, Tracking und Schriftarten</h2>
-    <p>Diese Website setzt keine Cookies und verwendet keine Analyse- oder Tracking-Dienste. Es werden Systemschriften verwendet; es findet kein Abruf von Schriftarten bei Drittanbietern statt. <mark>Ändere diesen Abschnitt, falls du später Analyse-Tools, Karten oder externe Schriften einbaust.</mark></p>
+<button
+    class="menu-button"
+    id="menuButton"
+    aria-label="Menü öffnen"
+    aria-expanded="false">
+    ☰
+</button>
 
-    <h2>6. Ihre Rechte</h2>
-    <p>Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21). Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Wenden Sie sich dazu an die oben genannte Adresse.</p>
-    <p>Sie haben außerdem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig ist <mark>die Landesbeauftragte für Datenschutz und Informationsfreiheit der Freien Hansestadt Bremen (bitte Kontaktdaten prüfen)</mark>.</p>
+</nav>
 
-    <h2>7. Aktualität</h2>
-    <p>Stand: <mark>Datum eintragen</mark></p>
-    <p><a class="btn btn-outline btn-sm" href="#start">Zurück nach oben</a></p>
+</header>
+
+
+<main id="main">
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="hero-badge">
+    <span class="status-dot"></span>
+    Gartenservice & Außenreinigung in Bremen
+</div>
+
+
+<h1>
+    Wir machen aus
+    <span class="green">Außenflächen</span>
+    echte
+    <span class="blue">Hingucker.</span>
+</h1>
+
+
+<p class="hero-description">
+    Gartenpflege, Heckenschnitt, Unkrautentfernung,
+    Pflasterreinigung und Außenreinigung –
+    sauber geplant und professionell ausgeführt.
+</p>
+
+
+<div class="hero-buttons">
+
+<a href="#kontakt" class="btn btn-primary">
+    🌱 Kostenloses Angebot
+</a>
+
+<a href="#leistungen" class="btn btn-white">
+    Leistungen entdecken →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-tools" aria-hidden="true"></div>
+
+<div class="hero-bottom"></div>
+
 </section>
 
-  <!-- Schnellleiste, nur auf dem Smartphone sichtbar -->
-  <nav class="mobile-bar" aria-label="Schnellkontakt">
-    <a href="#kontakt" data-tel><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Anrufen</a>
-    <a href="#kontakt" data-wa><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp</a>
-    <a class="primary" href="#kontakt">Angebot</a>
-  </nav>
 
-  <script>
-/* ==========================================================================
-   HIER TRÄGST DU DEINE DATEN EIN – das ist die einzige Datei, die du für
-   Telefon, E-Mail, WhatsApp und Formular anfassen musst.
-   Die Werte werden automatisch überall auf der Seite eingesetzt.
-   ========================================================================== */
+<!-- ================= TRUST ================= -->
 
-window.SITE_CONFIG = {
+<div class="trust-strip">
 
-  // Telefonnummer, so wie sie auf der Seite angezeigt wird
-  phoneDisplay: "0421 000 000 00",
+<div class="trust-grid">
 
-  // Telefonnummer für den Anruf-Link: internationale Schreibweise,
-  // mit +49, ohne Leerzeichen und ohne führende 0 (Beispiel: +4942100000000)
-  phoneLink: "+4942100000000",
+<div class="trust-item">
+    <div class="trust-icon">🌱</div>
+    <strong>Gartenpflege</strong>
+    <span>Sauber & gründlich</span>
+</div>
 
-  // Deine E-Mail-Adresse
-  email: "info@deine-domain.de",
+<div class="trust-item">
+    <div class="trust-icon">✂️</div>
+    <strong>Heckenschnitt</strong>
+    <span>Für gepflegte Anlagen</span>
+</div>
 
-  // WhatsApp-Nummer: nur Ziffern, mit 49 am Anfang, OHNE + und ohne 0
-  // (Beispiel für 0170 1234567  ->  491701234567)
-  whatsapp: "491700000000",
+<div class="trust-item">
+    <div class="trust-icon">💦</div>
+    <strong>Reinigung</strong>
+    <span>Außenflächen & Pflaster</span>
+</div>
 
-  // Text, der in WhatsApp schon vorausgefüllt ist
-  whatsappText: "Hallo, ich interessiere mich für ein Angebot von Daris Bau und Grün Werk.",
+<div class="trust-item">
+    <div class="trust-icon">📍</div>
+    <strong>Bremen</strong>
+    <span>Und Umgebung</span>
+</div>
 
-  // Link für den Button "Weitere Projekte ansehen" (z. B. dein Instagram-Profil).
-  // Leer lassen = Button führt zum Kontaktformular.
-  projectsUrl: "",
+</div>
 
-  // Adresse deines n8n-Webhooks (Production URL), an den das Formular gesendet wird.
-  // Leer lassen = Beim Absenden öffnet sich stattdessen das E-Mail-Programm.
-  webhookUrl: ""
-};
+</div>
+
+
+<!-- ================= LEISTUNGEN ================= -->
+
+<section class="services" id="leistungen">
+
+<div class="container">
+
+<div class="services-header reveal">
+
+<div>
+
+<div class="section-label">
+    Unsere Leistungen
+</div>
+
+<h2 class="section-title">
+    Wir kümmern uns um Ihren Außenbereich.
+</h2>
+
+<p class="section-description">
+    Vom kleinen Gartenauftrag bis zur gründlichen
+    Reinigung größerer Außenflächen.
+</p>
+
+</div>
+
+<a href="#kontakt" class="btn btn-primary">
+    Anfrage starten →
+</a>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<article class="service-card reveal">
+
+<div class="service-number">01</div>
+
+<div class="service-icon">🌱</div>
+
+<h3>Gartenpflege</h3>
+
+<p>
+Rasen, Beete, Laub, Unkraut und allgemeine
+Pflegearbeiten für einen gepflegten Garten.
+</p>
+
+<a href="#kontakt" class="service-link">
+    Auftrag anfragen →
+</a>
+
+</article>
+
+
+<article class="service-card reveal">
+
+<div class="service-number">02</div>
+
+<div class="service-icon">✂️</div>
+
+<h3>Hecken & Sträucher</h3>
+
+<p>
+Heckenschnitt, Strauchschnitt und Rückschnitt
+für ein ordentliches Erscheinungsbild.
+</p>
+
+<a href="#kontakt" class="service-link">
+    Auftrag anfragen →
+</a>
+
+</article>
+
+
+<article class="service-card reveal">
+
+<div class="service-number">03</div>
+
+<div class="service-icon">🌿</div>
+
+<h3>Unkrautentfernung</h3>
+
+<p>
+Entfernung von störendem Unkraut auf
+Beeten, Wegen und befestigten Flächen.
+</p>
+
+<a href="#kontakt" class="service-link">
+    Auftrag anfragen →
+</a>
+
+</article>
+
+
+<article class="service-card reveal">
+
+<div class="service-number">04</div>
+
+<div class="service-icon">💦</div>
+
+<h3>Pflasterreinigung</h3>
+
+<p>
+Reinigung von Pflastersteinen, Terrassen,
+Einfahrten und weiteren Außenflächen.
+</p>
+
+<a href="#kontakt" class="service-link">
+    Auftrag anfragen →
+</a>
+
+</article>
+
+
+<article class="service-card reveal">
+
+<div class="service-number">05</div>
+
+<div class="service-icon">🧽</div>
+
+<h3>Außenreinigung</h3>
+
+<p>
+Gründliche Reinigung von Wegen, Mauern,
+Terrassen und anderen Außenbereichen.
+</p>
+
+<a href="#kontakt" class="service-link">
+    Auftrag anfragen →
+</a>
+
+</article>
+
+
+<article class="service-card reveal">
+
+<div class="service-number">06</div>
+
+<div class="service-icon">🪟</div>
+
+<h3>Glas & Überdachungen</h3>
+
+<p>
+Reinigung von Glasflächen und
+Terrassenüberdachungen.
+</p>
+
+<a href="#kontakt" class="service-link">
+    Auftrag anfragen →
+</a>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ÜBER UNS ================= -->
+
+<section class="about" id="ueber-uns">
+
+<div class="container about-grid">
+
+
+<div class="about-visual reveal">
+
+<div
+    class="photo-main"
+    role="img"
+    aria-label="Symbolische Darstellung eines gepflegten Gartens">
+</div>
+
+<div class="floating-card">
+
+<div class="big">🌿</div>
+
+<strong>Daris Bau & Grün Werk</strong>
+
+<small>
+Gartenservice & Reinigung
+</small>
+
+</div>
+
+</div>
+
+
+<div class="reveal">
+
+<div class="section-label">
+    Warum wir?
+</div>
+
+<h2 class="section-title">
+    Saubere Arbeit beginnt mit einem guten Plan.
+</h2>
+
+<p class="section-description">
+    Wir wollen nicht einfach nur Arbeit erledigen.
+    Unser Ziel ist ein ordentliches, sauberes und
+    sichtbares Ergebnis.
+</p>
+
+
+<div class="check-list">
+
+<div class="check">
+    <div class="check-icon">✓</div>
+    <div>
+        <strong>Klare Kommunikation</strong><br>
+        <small>Absprachen verständlich und direkt.</small>
+    </div>
+</div>
+
+<div class="check">
+    <div class="check-icon">✓</div>
+    <div>
+        <strong>Gründliche Ausführung</strong><br>
+        <small>Wir achten auf die Details.</small>
+    </div>
+</div>
+
+<div class="check">
+    <div class="check-icon">✓</div>
+    <div>
+        <strong>Passendes Equipment</strong><br>
+        <small>Werkzeug passend zur jeweiligen Aufgabe.</small>
+    </div>
+</div>
+
+<div class="check">
+    <div class="check-icon">✓</div>
+    <div>
+        <strong>Individuelle Lösungen</strong><br>
+        <small>Jeder Außenbereich ist anders.</small>
+    </div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PROJEKTE ================= -->
+
+<section class="projects" id="projekte">
+
+<div class="container">
+
+<div class="section-label reveal">
+    Unsere Arbeiten
+</div>
+
+<h2 class="section-title reveal">
+    Das Ergebnis soll für sich sprechen.
+</h2>
+
+<p class="section-description reveal">
+    Hier kannst du später deine echten Projekte und
+    Vorher-Nachher-Bilder zeigen.
+</p>
+
+
+<div class="projects-grid">
+
+
+<article class="project project-1 reveal">
+
+<div class="project-content">
+
+<div class="project-icon">🌳</div>
+
+<h3>Gartenpflege</h3>
+
+<p>
+Dein echtes Projektbild hier einsetzen.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="project project-2 reveal">
+
+<div class="project-content">
+
+<div class="project-icon">💦</div>
+
+<h3>Pflasterreinigung</h3>
+
+<p>
+Dein echtes Vorher-Nachher-Projekt hier einsetzen.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+
+<!-- BEFORE / AFTER -->
+
+<div class="before-after reveal">
+
+<div class="before-after-title">
+
+<h3>Vorher → Nachher</h3>
+
+<span>
+Ziehe den Regler
+</span>
+
+</div>
+
+
+<div
+    class="before-after-box"
+    id="beforeAfter">
+
+<div class="after">
+
+<div class="after-content">
+    ✨🌿
+</div>
+
+</div>
+
+
+<div class="before">
+
+<div class="before-content">
+    🌿🪨
+</div>
+
+</div>
+
+
+<div class="slider-line"></div>
+
+<button
+    class="slider-button"
+    id="sliderButton"
+    aria-label="Vorher-Nachher-Regler">
+    ↔
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ABLAUF ================= -->
+
+<section class="process" id="ablauf">
+
+<div class="container">
+
+<div class="section-label">
+    So funktioniert es
+</div>
+
+<h2 class="section-title">
+    Einfach von der Anfrage bis zum fertigen Auftrag.
+</h2>
+
+<p class="section-description">
+    Kein komplizierter Ablauf – Anfrage senden,
+    Auftrag besprechen und Termin vereinbaren.
+</p>
+
+
+<div class="process-grid">
+
+
+<div class="process-card reveal">
+
+<div class="process-number">
+    SCHRITT 01
+</div>
+
+<div class="process-icon">
+    📩
+</div>
+
+<h3>Anfrage senden</h3>
+
+<p>
+Du beschreibst kurz, was gemacht werden soll.
+</p>
+
+</div>
+
+
+<div class="process-card reveal">
+
+<div class="process-number">
+    SCHRITT 02
+</div>
+
+<div class="process-icon">
+    📋
+</div>
+
+<h3>Auftrag besprechen</h3>
+
+<p>
+Wir klären Umfang, Wünsche und wichtige Details.
+</p>
+
+</div>
+
+
+<div class="process-card reveal">
+
+<div class="process-number">
+    SCHRITT 03
+</div>
+
+<div class="process-icon">
+    📅
+</div>
+
+<h3>Termin planen</h3>
+
+<p>
+Gemeinsam wird ein passender Termin vereinbart.
+</p>
+
+</div>
+
+
+<div class="process-card reveal">
+
+<div class="process-number">
+    SCHRITT 04
+</div>
+
+<div class="process-icon">
+    🧹
+</div>
+
+<h3>Arbeit ausführen</h3>
+
+<p>
+Der Auftrag wird sauber und sorgfältig erledigt.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= KONTAKT ================= -->
+
+<section class="contact" id="kontakt">
+
+<div class="container contact-grid">
+
+
+<div class="reveal">
+
+<div class="section-label">
+    Kontakt
+</div>
+
+<h2 class="section-title">
+    Bereit für einen gepflegteren Außenbereich?
+</h2>
+
+<p class="section-description">
+    Beschreibe deinen Auftrag. Je genauer die Angaben,
+    desto besser können wir die Anfrage einschätzen.
+</p>
+
+
+<div class="contact-details">
+
+
+<div class="contact-item">
+
+<div class="contact-item-icon">
+    📍
+</div>
+
+<div>
+    <small>Gebiet</small>
+    <strong>Bremen & Umgebung</strong>
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-item-icon">
+    📞
+</div>
+
+<div>
+    <small>Telefon</small>
+    <strong>DEINE TELEFONNUMMER</strong>
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-item-icon">
+    ✉️
+</div>
+
+<div>
+    <small>E-Mail</small>
+    <strong>DEINE E-MAIL</strong>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<form
+    class="contact-form reveal"
+    action="DEIN_FORMULAR_ANBIETER"
+    method="POST">
+
+<h3>
+    Anfrage senden
+</h3>
+
+<p class="section-description">
+    Die mit * markierten Felder sind erforderlich.
+</p>
+
+
+<div class="form-row">
+
+<div class="field">
+
+<label for="name">
+    Name *
+</label>
+
+<input
+    id="name"
+    name="name"
+    type="text"
+    autocomplete="name"
+    required
+    placeholder="Max Mustermann">
+
+</div>
+
+
+<div class="field">
+
+<label for="phone">
+    Telefon *
+</label>
+
+<input
+    id="phone"
+    name="phone"
+    type="tel"
+    autocomplete="tel"
+    required
+    placeholder="0151 12345678">
+
+</div>
+
+</div>
+
+
+<div class="field">
+
+<label for="email">
+    E-Mail
+</label>
+
+<input
+    id="email"
+    name="email"
+    type="email"
+    autocomplete="email"
+    placeholder="name@example.de">
+
+</div>
+
+
+<div class="field">
+
+<label for="service">
+    Gewünschte Leistung *
+</label>
+
+<select
+    id="service"
+    name="service"
+    required>
+
+<option value="">
+    Bitte auswählen
+</option>
+
+<option>
+    Gartenpflege
+</option>
+
+<option>
+    Heckenschnitt
+</option>
+
+<option>
+    Unkrautentfernung
+</option>
+
+<option>
+    Pflasterreinigung
+</option>
+
+<option>
+    Außenreinigung
+</option>
+
+<option>
+    Glasreinigung
+</option>
+
+<option>
+    Sonstiges
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label for="message">
+    Beschreibung des Auftrags *
+</label>
+
+<textarea
+    id="message"
+    name="message"
+    required
+    placeholder="Was soll gemacht werden? Wie groß ist die Fläche ungefähr?"></textarea>
+
+</div>
+
+
+<button
+    class="btn btn-primary"
+    type="submit">
+
+    Anfrage absenden →
+
+</button>
+
+
+<p class="form-note">
+    Bitte keine sensiblen persönlichen Daten in das Formular
+    schreiben. Datenschutz und Impressum müssen vor dem
+    Livegang mit deinen echten Unternehmensangaben ergänzt werden.
+</p>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="final-cta">
+
+<div class="container">
+
+<div class="section-label">
+    Daris Bau & Grün Werk
+</div>
+
+<h2 class="section-title">
+    Dein Garten.
+    Unser Einsatz.
+    Sauberes Ergebnis.
+</h2>
+
+<p class="section-description" style="color:#c7ddd0;margin-left:auto;margin-right:auto;">
+    Jetzt Anfrage senden und dein Projekt besprechen.
+</p>
+
+<a href="#kontakt" class="btn btn-primary">
+    🌱 Anfrage starten
+</a>
+
+</div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div class="footer-brand">
+
+<div class="logo">
+
+<div class="logo-mark">
+    🌿
+</div>
+
+<div class="logo-text">
+    <strong style="color:white;">
+        DARIS BAU & GRÜN WERK
+    </strong>
+
+    <small>
+        GARTEN • REINIGUNG • SERVICE
+    </small>
+</div>
+
+</div>
+
+<p>
+Professioneller Gartenservice und Außenreinigung
+in Bremen und Umgebung.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+    Navigation
+</h3>
+
+<div class="footer-links">
+
+<a href="#leistungen">
+    Leistungen
+</a>
+
+<a href="#ueber-uns">
+    Über uns
+</a>
+
+<a href="#projekte">
+    Projekte
+</a>
+
+<a href="#kontakt">
+    Kontakt
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h3>
+    Rechtliches
+</h3>
+
+<div class="footer-links">
+
+<a href="impressum.html">
+    Impressum
+</a>
+
+<a href="datenschutz.html">
+    Datenschutz
+</a>
+
+<a href="agb.html">
+    AGB / Bedingungen
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+<div>
+    © 2026 Daris Bau und Grün Werk
+</div>
+
+<div>
+    Gartenservice • Außenreinigung • Bremen
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+
+<a
+    class="whatsapp"
+    href="https://wa.me/DEINE_NUMMER"
+    aria-label="WhatsApp Kontakt"
+    target="_blank"
+    rel="noopener">
+    ☎
+</a>
+
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.getElementById("navLinks");
+
+menuButton.addEventListener("click", () => {
+
+    const active = navLinks.classList.toggle("active");
+
+    menuButton.setAttribute(
+        "aria-expanded",
+        active
+    );
+
+    menuButton.textContent =
+        active ? "✕" : "☰";
+});
+
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menuButton.textContent = "☰";
+
+    });
+
+});
+
+
+/* =========================================================
+   SCROLL PROGRESS
+   ========================================================= */
+
+window.addEventListener("scroll", () => {
+
+    const scrollTop =
+        window.scrollY;
+
+    const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+    const percentage =
+        (scrollTop / height) * 100;
+
+    document.getElementById("progress").style.width =
+        percentage + "%";
+
+});
+
+
+/* =========================================================
+   SCROLL REVEAL
+   ========================================================= */
+
+const observer =
+    new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                if(entry.isIntersecting) {
+
+                    entry.target.classList.add("visible");
+
+                    observer.unobserve(
+                        entry.target
+                    );
+
+                }
+
+            });
+
+        },
+        {
+            threshold: .12
+        }
+    );
+
+
+document
+    .querySelectorAll(".reveal")
+    .forEach(element => {
+
+        observer.observe(element);
+
+    });
+
+
+/* =========================================================
+   BEFORE / AFTER SLIDER
+   ========================================================= */
+
+const beforeAfter =
+    document.getElementById("beforeAfter");
+
+const before =
+    beforeAfter.querySelector(".before");
+
+const sliderButton =
+    document.getElementById("sliderButton");
+
+let dragging = false;
+
+
+function moveSlider(clientX) {
+
+    const rect =
+        beforeAfter.getBoundingClientRect();
+
+    let position =
+        ((clientX - rect.left) / rect.width) * 100;
+
+    position =
+        Math.max(5, Math.min(95, position));
+
+    before.style.width =
+        position + "%";
+
+    sliderButton.style.left =
+        position + "%";
+
+    beforeAfter
+        .querySelector(".slider-line")
+        .style.left =
+        position + "%";
+}
+
+
+beforeAfter.addEventListener(
+    "pointerdown",
+    event => {
+
+        dragging = true;
+
+        beforeAfter.setPointerCapture(
+            event.pointerId
+        );
+
+        moveSlider(event.clientX);
+
+    }
+);
+
+
+beforeAfter.addEventListener(
+    "pointermove",
+    event => {
+
+        if(!dragging) return;
+
+        moveSlider(event.clientX);
+
+    }
+);
+
+
+beforeAfter.addEventListener(
+    "pointerup",
+    () => {
+
+        dragging = false;
+
+    }
+);
+
+
+/* =========================================================
+   CARD TILT – SUBTLE MICRO ANIMATION
+   ========================================================= */
+
+document
+    .querySelectorAll(".service-card")
+    .forEach(card => {
+
+        card.addEventListener(
+            "mousemove",
+            event => {
+
+                if(window.innerWidth < 800)
+                    return;
+
+                const rect =
+                    card.getBoundingClientRect();
+
+                const x =
+                    event.clientX - rect.left;
+
+                const y =
+                    event.clientY - rect.top;
+
+                const rotateX =
+                    ((y / rect.height) - .5) * -3;
+
+                const rotateY =
+                    ((x / rect.width) - .5) * 3;
+
+                card.style.transform =
+                    `perspective(800px)
+                     rotateX(${rotateX}deg)
+                     rotateY(${rotateY}deg)
+                     translateY(-7px)`;
+
+            }
+        );
+
+        card.addEventListener(
+            "mouseleave",
+            () => {
+
+                card.style.transform = "";
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   FORM BUTTON FEEDBACK
+   ========================================================= */
+
+const form =
+    document.querySelector(".contact-form");
+
+form.addEventListener("submit", () => {
+
+    const button =
+        form.querySelector("button");
+
+    button.textContent =
+        "Anfrage wird gesendet…";
+
+});
+
+
 </script>
-  <script>
-/* ==========================================================================
-   Daris Bau und Grün Werk – JavaScript
-   Aufbau:
-   1. Kontaktdaten aus config.js einsetzen
-   2. Mobiles Menü
-   3. Header-Schatten beim Scrollen
-   4. Vorher-Nachher-Regler
-   5. Kontaktformular
-   ========================================================================== */
-(function () {
-  "use strict";
 
-  var C = window.SITE_CONFIG || {};
-
-  function each(selector, fn) {
-    Array.prototype.forEach.call(document.querySelectorAll(selector), fn);
-  }
-
-  /* ===== 1. KONTAKTDATEN EINSETZEN ===== */
-  if (C.phoneLink) each("[data-tel]", function (el) { el.href = "tel:" + C.phoneLink; });
-  if (C.phoneDisplay) each("[data-tel-text]", function (el) { el.textContent = C.phoneDisplay; });
-  if (C.email) {
-    each("[data-mail]", function (el) { el.href = "mailto:" + C.email; });
-    each("[data-mail-text]", function (el) { el.textContent = C.email; });
-  }
-  if (C.whatsapp) {
-    each("[data-wa]", function (el) {
-      el.href = "https://wa.me/" + C.whatsapp + "?text=" + encodeURIComponent(C.whatsappText || "");
-      el.target = "_blank";
-      el.rel = "noopener";
-    });
-  }
-  if (C.projectsUrl) {
-    each("[data-projects]", function (el) {
-      el.href = C.projectsUrl;
-      el.target = "_blank";
-      el.rel = "noopener";
-    });
-  }
-  each("[data-year]", function (el) { el.textContent = new Date().getFullYear(); });
-
-  /* ===== 2. MOBILES MENÜ ===== */
-  var toggle = document.getElementById("navToggle");
-  var nav = document.getElementById("nav");
-  if (toggle && nav) {
-    toggle.addEventListener("click", function () {
-      var open = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", String(open));
-      toggle.setAttribute("aria-label", open ? "Menü schließen" : "Menü öffnen");
-    });
-    // Menü schließen, sobald ein Link angetippt wird
-    nav.addEventListener("click", function (e) {
-      if (e.target.tagName === "A") {
-        nav.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
-        toggle.setAttribute("aria-label", "Menü öffnen");
-      }
-    });
-  }
-
-  /* ===== 3. HEADER-SCHATTEN BEIM SCROLLEN ===== */
-  var header = document.querySelector(".site-header");
-  function onScroll() {
-    if (header) header.classList.toggle("scrolled", window.scrollY > 8);
-  }
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
-
-  /* ===== 4. VORHER-NACHHER-REGLER ===== */
-  each(".ba", function (box) {
-    var range = box.querySelector(".ba-range");
-    if (!range) return;
-    function update() { box.style.setProperty("--pos", range.value + "%"); }
-    range.addEventListener("input", update);
-    update();
-  });
-
-  /* ===== 5. KONTAKTFORMULAR ===== */
-  var form = document.getElementById("contactForm");
-  if (!form) return;
-
-  var msg = document.getElementById("formMsg");
-  var btn = document.getElementById("submitBtn");
-  var fileInput = document.getElementById("f-bilder");
-  var fileList = document.getElementById("fileList");
-  var MAX_FILES = 5;
-  var MAX_SIZE = 5 * 1024 * 1024; // 5 MB pro Bild
-
-  function showMsg(text, type) {
-    msg.textContent = text;
-    msg.className = "form-msg" + (type ? " " + type : "");
-  }
-
-  // Dateinamen unter dem Upload-Feld anzeigen
-  fileInput.addEventListener("change", function () {
-    fileList.innerHTML = "";
-    Array.prototype.forEach.call(fileInput.files, function (f) {
-      var li = document.createElement("li");
-      li.textContent = f.name + " (" + Math.round(f.size / 1024) + " KB)";
-      fileList.appendChild(li);
-    });
-  });
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    showMsg("");
-
-    // Spam-Falle: Bots füllen das versteckte Feld aus
-    if (form.elements.website.value) return;
-
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
-    if (!form.elements.telefon.value.trim() && !form.elements.email.value.trim()) {
-      showMsg("Bitte geben Sie eine Telefonnummer oder eine E-Mail-Adresse an, damit wir Sie erreichen können.", "error");
-      return;
-    }
-
-    var files = Array.prototype.slice.call(fileInput.files);
-    if (files.length > MAX_FILES) {
-      showMsg("Bitte wählen Sie höchstens " + MAX_FILES + " Bilder aus.", "error");
-      return;
-    }
-    for (var i = 0; i < files.length; i++) {
-      if (files[i].size > MAX_SIZE) {
-        showMsg("Das Bild „" + files[i].name + "“ ist größer als 5 MB.", "error");
-        return;
-      }
-    }
-
-    var values = {
-      name: form.elements.name.value.trim(),
-      telefon: form.elements.telefon.value.trim(),
-      email: form.elements.email.value.trim(),
-      ort: form.elements.ort.value.trim(),
-      leistung: form.elements.leistung.value,
-      beschreibung: form.elements.beschreibung.value.trim()
-    };
-
-    /* --- Variante A: Kein Webhook eingetragen -> E-Mail-Programm öffnen --- */
-    if (!C.webhookUrl) {
-      var body =
-        "Name: " + values.name + "\n" +
-        "Telefon: " + values.telefon + "\n" +
-        "E-Mail: " + values.email + "\n" +
-        "Adresse/Ort: " + values.ort + "\n" +
-        "Leistung: " + values.leistung + "\n\n" +
-        values.beschreibung;
-      window.location.href =
-        "mailto:" + (C.email || "") +
-        "?subject=" + encodeURIComponent("Anfrage: " + values.leistung) +
-        "&body=" + encodeURIComponent(body);
-      showMsg("Ihr E-Mail-Programm wurde geöffnet. Bilder können Sie dort direkt anhängen.", "ok");
-      return;
-    }
-
-    /* --- Variante B: Senden an n8n-Webhook (inklusive Bilder) --- */
-    var data = new FormData();
-    Object.keys(values).forEach(function (k) { data.append(k, values[k]); });
-    files.forEach(function (f, idx) { data.append("bild" + (idx + 1), f); });
-
-    btn.disabled = true;
-    btn.textContent = "Wird gesendet …";
-
-    fetch(C.webhookUrl, { method: "POST", body: data })
-      .then(function (res) {
-        if (!res.ok) throw new Error("HTTP " + res.status);
-        document.getElementById("formCard").innerHTML =
-          '<div class="form-success">' +
-          '<svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>' +
-          "<h3>Vielen Dank für Ihre Anfrage!</h3>" +
-          "<p>Wir haben Ihre Nachricht erhalten und melden uns bald bei Ihnen.</p>" +
-          "</div>";
-      })
-      .catch(function () {
-        btn.disabled = false;
-        btn.textContent = "Angebot anfragen";
-        showMsg("Das Senden hat leider nicht geklappt. Bitte rufen Sie uns an oder schreiben Sie uns per E-Mail oder WhatsApp.", "error");
-      });
-  });
-})();
-</script>
 </body>
 </html>
